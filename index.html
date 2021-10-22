@@ -24,10 +24,10 @@
 </head>
 
 <body>
-    <header>
+    <header class="cabecalho-nav">
         <!-- INICIO NAVBAR -->
-        <nav class="navbar navbar-expand-lg">
-            <a class="nav-link " href="#">BOUTIQUE</a>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <h4><a class="nav-link logo" href="#">BOUTIQUE</a></h4>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
                 aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,14 +39,61 @@
                     <a class=" nav-link" href="#">Feminino</a>
                     <a class="nav-link" href="#">Acessórios</a>
                     <a class="nav-link" href="#">Contatos</a>
-                    <i class="fas fa-shopping-cart"></i>
                 </div>
             </div>
+            <ul>
+                <li><i class="fas fa-shopping-cart"></i></li>
+                <li><i class="fa fa-search"></i></li>
+                <li><i class="fas fa-cog"></i></li>
+            </ul>
         </nav><!-- FIM NAVBAR -->
 
-        <main>
+        <main class="container-fluid">
+            <!-- INICIO CONTAINER FLUID -->
+            <!-- INICIO CAROUSEL -->
+            <article id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 img-carousel" src="img/imagecarousel1.jpg" alt="Primeiro Slide">
+                        <aside class="carousel-descricao">
+                            <h2>Reclamed!</h2>
+                            <h1>VINTAGE SUEDE 70S JACKET</h1>
+                            <P>Free shippingg all over the work!</P>
+                            <P>SHOP NOW!</P>
+                        </aside>
 
-        </main>
+
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img-carousel" src="img/imagecarousel2.jpg" alt="Segundo Slide">
+                        <aside class="carousel-descricao">
+                            <h2>Solid Classic!</h2>
+                            <h1>LEATHER BIKER JACKET</h1>
+                            <P>Free shippingg all over the work!</P>
+                            <P>SHOP NOW!</P>
+                        </aside>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img-carousel" src="img/imagecarousel3.jpg" alt="Terceiro Slide">
+                        <aside class="carousel-descricao">
+                            <h2>Geometric</h2>
+                            <h1>TOMMY FARGO SNOOD</h1>
+                            <P>The big difference nunge of accessories!</P>
+
+                            <P>SHOP NOW!</P>
+                        </aside>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </article><!-- FIM CAROUSEL -->
+        </main><!-- FIM CONTAINER FLUID -->
         <footer>
 
         </footer>
