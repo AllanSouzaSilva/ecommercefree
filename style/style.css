@@ -26,6 +26,9 @@ body>header {
 
 .cabecalho-nav {
     background: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .navbar {
@@ -70,6 +73,8 @@ nav>ul>li {
 
 .container-fluid {
     border: 2px solid black;
+    width:1090px;
+    margin-top: 30px;
     padding: 0;
 }
 
@@ -78,28 +83,66 @@ nav>ul>li {
 .carousel {
     border: 2px solid red;
     width: 100%;
-    height: 500px;
 }
-
-.carousel-inner {
-    border: 2px solid yellow;
-    height: 600px;
-}
-
-.carousel-item {
-    border: 2px solid blue;
-}
-
 .img-carousel {
-    border: 2px solid green;
-    height: 600px;
-    object-fit:fill;
+    object-fit: contain;
 }
 
 .carousel-descricao {
-    border: 2px solid black;
     position: absolute;
     bottom: 100px;
-    left: 200px;
+    left: 150px;
     color: #FFF;
+}
+
+/******************************** CONFIGURAÇÕES CONTAINER SESSÃO FREE ***************************/
+
+.container-free {
+    border: 2px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.container-free>p {
+    border: 2px solid red;
+    border: 1px dashed #c3c3c3;
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 150px;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+p>i {
+    border: 1px solid yellow;
+    padding: 10px;
+
+}
+
+/******************************** CONFIGURAÇÕES CONTAINER SESSÃO FREE ***************************/
+
+.container-destaques-hoje{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+}
+
+.img-destaque-descricao{
+    border: 1px solid yellow;
+
+}
+
+
+/******************************** CONFIGURAÇÕES CONTAINER SESSÃO FREE ***************************/
+.container-destaques{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+}
+.image-Destaque{
+    border: 2px solid blue;
+    width: 300px;
+    height: 300px;
 }
