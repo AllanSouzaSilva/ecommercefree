@@ -73,7 +73,7 @@ nav>ul>li {
 
 .container-fluid {
     border: 2px solid black;
-    width:1090px;
+    width: 1090px;
     margin-top: 30px;
     padding: 0;
 }
@@ -84,6 +84,7 @@ nav>ul>li {
     border: 2px solid red;
     width: 100%;
 }
+
 .img-carousel {
     object-fit: contain;
 }
@@ -101,7 +102,7 @@ nav>ul>li {
     border: 2px solid blue;
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
 }
 
 .container-free>p {
@@ -118,31 +119,83 @@ nav>ul>li {
 p>i {
     border: 1px solid yellow;
     padding: 10px;
-
 }
 
 /******************************** CONFIGURAÇÕES CONTAINER SESSÃO FREE ***************************/
 
-.container-destaques-hoje{
+.container-destaques-hoje {
     border: 1px solid red;
     display: flex;
     flex-direction: row;
 }
 
-.img-destaque-descricao{
+.img-destaque-descricao {
     border: 1px solid yellow;
-
 }
 
-
 /******************************** CONFIGURAÇÕES CONTAINER SESSÃO FREE ***************************/
-.container-destaques{
+
+.container-destaques {
     border: 2px solid black;
     display: flex;
     flex-direction: row;
 }
-.image-Destaque{
+
+.image-Destaque {
     border: 2px solid blue;
     width: 300px;
     height: 300px;
 }
+
+/******************************** CONFIGURAÇÕES CONTAINER SESSÃO CATEGORIAS ***************************/
+
+
+.container-categorias {
+    border: 2px solid blue;
+}
+
+.sessao-categorias {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+}
+.sessao-categorias li > a {
+    width: 135px;
+    height: 135px;
+    border: 1px dashed #cccccc;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 11px;
+    color: #222;
+    text-transform: uppercase;
+    vertical-align: middle;
+    display: table-cell;
+}
+.sessao-categorias div {
+    border: 2px solid black;
+    text-align: center;
+}
+
+.lista-categoria {
+    border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+}
+
+.lista-categoria li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-categorias{
+    border: 2px solid red;
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+/******************************** CONFIGURAÇÕES CONTAINER  ***************************/
