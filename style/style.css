@@ -293,7 +293,7 @@ p>i {
     list-style: none;
 }
 
-/******************************** CONFIGURAÇÕES CONTAINER FREE DELUVERY  ***************************/
+/******************************** CONFIGURAÇÕES CONTAINER FREE DELIVERY  ***************************/
 
 .delivery {
     border: 1px dashed #cccccc;
@@ -301,7 +301,37 @@ p>i {
     margin-bottom: 60px;
 }
 
-.icon-tesoura{
+.icon-tesoura {
     position: relative;
     top: 27px;
+}
+
+/******************************** CONFIGURAÇÕES CONTAINER BLOG  ***************************/
+
+.container-blog {
+    border: 2px solid red;
+    }
+
+.sessao-blog {
+    border: 2px solid blue;
+    text-align: center;
+}
+.sessao-post {
+    border: 2px solid yellow;
+}
+.sessao-blog-post {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.sessao-blog-post section{
+    display: flex;
+    flex-direction: row;
+}
+
+.img-blog {
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
 }
