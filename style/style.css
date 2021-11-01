@@ -298,11 +298,15 @@ p>i {
 .delivery {
     border: 1px dashed #cccccc;
     padding: 20px;
-    margin-bottom: 60px;
+}
+
+.delivery p {
+    text-align: center;
 }
 
 .icon-tesoura {
-    position: relative;
+    border: 2px solid red;
+    position: absolute;
     top: 27px;
 }
 
