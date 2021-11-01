@@ -307,7 +307,6 @@ p>i {
 .icon-tesoura {
     border: 2px solid red;
     position: absolute;
-    top: 27px;
 }
 
 /******************************** CONFIGURAÇÕES CONTAINER BLOG  ***************************/
@@ -335,11 +334,36 @@ p>i {
 }
 
 .img-blog {
+    border: 1px solid black;
     width: 300px;
-    height: 300px;
+    height: 370px;
     max-width: 100%;
 }
 
+.sessao-post span{
+    border: 2px solid red;
+    display:  flex;
+    flex-direction: row;
+
+}
+.sessao-post span p{
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+}
 
 
-/******************************** CONFIGURAÇÕES CONTAINER RODAPÉ  ***************************/
+/******************************* CONFIGURAÇÕES CONTAINER RODAPÉ  ***************************/
+footer {
+    border: 1px solid red;
+    width: 1090px;
+    margin: auto;
+}
+
+footer article section{
+    border:2px solid blue;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+}
