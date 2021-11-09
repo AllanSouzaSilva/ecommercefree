@@ -14,6 +14,7 @@ html, body {
 }
 
 body {
+    font-family: 'Montserrat', sans-serif;
     background-color: #fff;
 }
 
@@ -25,25 +26,31 @@ body>header {
 /******************************** CONFIGURAÇÕES NAVBAR ***************************/
 
 .cabecalho-nav {
+    border: 2px solid yellow;
+    position: fixed;
     background: #212121;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index:999;
 }
 
 .navbar {
-    border: 2px solid red;
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 1100px;
-    margin: auto;
     padding: 0;
     background-color: #212121;
     text-transform: uppercase;
-    color: #EFEFEF;
+    color: #FFFF;
 }
 
 nav>h4>a {
     margin-right: 30px;
-    color: #EFEFEF;
     font-weight: bold;
 }
 
@@ -67,6 +74,26 @@ nav>ul>li {
     display: flex;
     justify-content: space-between;
     width: 600px;
+}
+.logo{
+    font-weight: 900;
+    color: #FFF !important;
+}
+
+.navbar-nav a{
+    color: #fff !important;
+    font-weight: 400;
+}
+.marcador{
+    color:#cc9933 !important ;
+}
+.notificacao{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #cc9933;
+    color: #fff;
+    font-size: 8px;
+    padding: 5px;
 }
 
 /******************************** CONFIGURAÇÕES CONTAINER FLUID ***************************/
@@ -359,17 +386,33 @@ footer {
     border: 1px solid red;
     display: flex;
     flex-direction: column;
+    margin-top: 150px;
     background: #F0F0F0;
 }
 
-footer article section {
-    border: 2px solid blue;
+footer article {
+    border: 2px solid yellow;
     width: 1090px;
     margin: auto;
+    margin-bottom: 100px;
+}
+
+.section-entregas {
+    border: 1px solid #cc9933;
+    position: relative;
+    bottom: 40px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
     text-align: center;
+    padding: 15px;
+    color: #888;
+    background-color: #fff;
+}
+
+.section-entregas i {
+    font-size: 1.5rem;
 }
 
 footer aside {
@@ -382,29 +425,89 @@ footer aside {
 }
 
 footer aside section {
-    border: 2px solid black;
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 300px;
+    justify-content: start;
+    text-align: left;
+    color: #888;
+    width: 350px;
 }
+
+.section-contato div {
+    border: 2px solid purple;
+}
+
 footer aside section h5 {
-    margin-bottom: 30px;
+    border:2px solid red;
+    color: #141414;
+    margin-bottom: 50px;
 }
-.section-tags-sessao{
-display: flex;
-flex-wrap:wrap;
+
+.section-tags-categorias div {
+    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
 }
-.section-tags-sessao p{
-    border: 1px solid #cac8c8;
+
+.section-tags-categorias p {
+    border: 1px solid #888;
     padding: 2px 10px 2px 10px;
     margin: 2px;
 }
 
-.bandeiras ul{
+.section-contato h3 {
+    border: 4px solid #141414;
+    text-align: center;
+    color: #141414;
+    margin-bottom: 50px;
+
+}
+.section-new-redes-sociais {}
+
+.section-new-redes-sociais .input-newsletter {
+    border: 2px solid yellow;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section-new-redes-sociais .input-newsletter .search-txt {
+    width: 241px;
+    text-align: center;
+}
+
+.section-new-redes-sociais .input-newsletter a .fa-search {
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #141414;
+    padding: 15px;
+}
+
+.section-new-redes-sociais .rede-sociais .lista-redes-sociais {
+    border: 2px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.rede-sociais ul li {
+    border: 2px solid green;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.rede-sociais ul li i {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.bandeiras ul {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 1090px;
 }
 
 .bandeiras ul li {

@@ -18,6 +18,11 @@
 
     <link rel="stylesheet" href="/style/olw/owl.carousel.min.css">
     <link rel="stylesheet" href="/style/olw/owl.theme.default.min.css">
+    <!-- Fontes de letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- Script -->
@@ -40,7 +45,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbar-links">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link marcador" href="#">Home</a>
                     <a class=" nav-link" href="#">Masculino</a>
                     <a class=" nav-link" href="#">Feminino</a>
                     <a class="nav-link" href="#">Acessórios</a>
@@ -48,7 +53,10 @@
                 </div>
             </div>
             <ul>
-                <li><i class="fas fa-shopping-cart"></i></li>
+                <li><i class="fas fa-shopping-cart"></i>
+                <span class="notificacao">
+                    0
+                </span> </li>
                 <li><i class="fa fa-search"></i></li>
                 <li><i class="fas fa-cog"></i></li>
             </ul>
@@ -353,7 +361,7 @@
     <!-- INICIO RODAPÉ-->
     <footer>
         <article>
-            <section>
+            <section class="section-entregas">
                 <i class="fas fa-truck"></i>
                 <h5>FREE SHIPPING</h5>
                 <p>from £150 purchase *</p>
@@ -365,72 +373,75 @@
                 <i class="fas fa-shield-alt"></i></h5>MEMBER SAFE SHOPPING </h5>
                 <p>Safe guarantee</p>
             </section>
-        </article>
-        <aside>
-            <section>
-                <h1>BOUTIQUE</h1>
-                <div>
-                    <p><i class="fas fa-home"></i>5701 Outlets at Tejon Pkwy, Tejon ranch CA 93203 UK.</p>
-                    
-                    <p><i class="fas fa-phone-alt"></i>(+800) 6868 2268</p>
-                    
-                    <p><i class="fas fa-envelope"></i>info@demo.com</p>
-                </div>
-            </section>
-            <section>
-                <h5>TAGS</h5>
-                <div class="section-tags-sessao">
-                <p>COAT</p>
-                <p>DRESS</p>
-                <p>JEAN</p>
-                <p>SHIRT</p>
-                <p>T-SHIRT</p>
-            </div>
-            </section>
-            <section>
-                <h5>NEWSLETTER</h5>
-                <section class="input-newsletter">
-                    <input type="text" class="search-txt" placeholder="Subscribe our newsletter">
-                    <a search-btn href="#"><i class="fa fa-search"></i></a>
+
+            <aside>
+                <section class="section-contato">
+                    <h3>BOUTIQUE</h3>
+                    <div>
+                        <p><i class="fas fa-home"></i>5701 Outlets at Tejon Pkwy, Tejon ranch CA 93203 UK.</p>
+
+                        <p><i class="fas fa-phone-alt"></i>(+800) 6868 2268</p>
+
+                        <p><i class="fas fa-envelope"></i>info@demo.com</p>
+                    </div>
                 </section>
-                <h5>FOLLOW US</h5>
-                <section class="rede-sociais">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-google-plus-g"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-youtube"></i>
+                <section class="section-tags-categorias">
+                    <h5>TAGS</h5>
+                    <div>
+                        <p>COAT</p>
+                        <p>DRESS</p>
+                        <p>JEAN</p>
+                        <p>SHIRT</p>
+                        <p>T-SHIRT</p>
+                    </div>
                 </section>
-            </section>
-        </aside>
-        <article class="bandeiras">
-            <ul>
-                <li>
-                <h6>WE ACCEPT</h6>
-                    <p> Online Payment Be Secured</p>
-                </li>
-                <li>
-                    <h3>PAYPAL</h3>
-                </li>
-                <li>
-                    
-                    <h3>VISA</h3>
-                </li>
-                <li>
-                    
-                    <h3>DISCOVER</h3>
-                </li>
-                <li>
-                    
-                    <h3>CITYBANK</h3>
-                </li>
-                <li>
-                    <i class="fas fa-arrow-circle-up"></i>
-                </li>
-            </ul>
+                <section class="section-new-redes-sociais">
+                    <h5>NEWSLETTER</h5>
+                    <section class="input-newsletter">
+                        <input type="text" class="search-txt" placeholder="Subscribe our newsletter">
+                        <a search-btn href="#"><i class="fa fa-search"></i></a>
+                    </section>
+
+                    <section class="rede-sociais">
+                        <h5>FOLLOW US</h5>
+                        <ul class="lista-redes-sociais">
+                            <li><i class="fab fa-facebook-f"></i></li>
+                            <li><i class="fab fa-twitter"></i></li>
+                            <li><i class="fab fa-google-plus-g"></i></li>
+                            <li><i class="fab fa-instagram"></i></li>
+                            <li><i class="fab fa-youtube"></i></li>
+                        </ul>
+                    </section>
+                </section>
+            </aside>
         </article>
     </footer>
-    </header>
+    <article class="bandeiras">
+        <ul>
+            <li>
+                <h6>WE ACCEPT</h6>
+                <p> Online Payment Be Secured</p>
+            </li>
+            <li>
+                <h3>PAYPAL</h3>
+            </li>
+            <li>
+
+                <h3>VISA</h3>
+            </li>
+            <li>
+
+                <h3>DISCOVER</h3>
+            </li>
+            <li>
+
+                <h3>CITYBANK</h3>
+            </li>
+            <li>
+                <i class="fas fa-arrow-circle-up"></i>
+            </li>
+        </ul>
+    </article>
 
 
 
