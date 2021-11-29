@@ -5,16 +5,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Adicione o slick-theme.css se desejar o estilo padrão -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@ 1.8.1 / slick / slick.css " />
+    <!--Adicione o slick-theme.css se desejar um estilo padrão  -->
 
-    <script src="Js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="// cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <script src="javascript/index.js"></script>
+
+    <script src="javascript/setup.js"></script>
     <title>TEST</title>
 
     <style type="text/css">
+        html,
+        body {
+            background-color: #e74c3c;
+        }
 
+        .wrapper {
+            width: 100%;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: sans-serif;
+            color: #fff;
+        }
+
+        .carousel {
+            width: 90%;
+            margin: 0px auto;
+        }
+
+        .slick-slide {
+            margin: 10px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+            border: 2px solid #fff;
+        }
+
+        .wrapper .slick-dots li button:before {
+            font-size: 20px;
+            color: white;
+        }
     </style>
 </head>
 
 <body>
+    <div class="wrapper">
+        <h2>Slick Carousel Example<h2>
+                <div class="carousel">
+                    <div><img src="https://picsum.photos/300/200?random=1"></div>
+                    <div><img src="https://picsum.photos/300/200?random=2"></div>
+                    <div><img src="https://picsum.photos/300/200?random=3"></div>
+                    <div><img src="https://picsum.photos/300/200?random=4"></div>
+                    <div><img src="https://picsum.photos/300/200?random=5"></div>
+                    <div><img src="https://picsum.photos/300/200?random=6"></div>
+                </div>
+    </div>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </body>
 
 </html>

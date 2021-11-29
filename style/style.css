@@ -5,6 +5,7 @@
 }
 
 html {
+    font-size: calc(60% + 0.8vmin);
     scroll-behavior: smooth;
 }
 
@@ -14,7 +15,7 @@ html, body {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     background-color: #fff;
 }
 
@@ -23,18 +24,21 @@ body>header {
     padding: 0;
 }
 
+img {
+    vertical-align: middle;
+}
+
 /******************************** CONFIGURAÇÕES NAVBAR ***************************/
 
 .cabecalho-nav {
     border: 2px solid yellow;
-    position: fixed;
     background: #212121;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    z-index:999;
+    z-index: 999;
 }
 
 .navbar {
@@ -46,7 +50,6 @@ body>header {
     padding: 0;
     background-color: #212121;
     text-transform: uppercase;
-    color: #FFFF;
 }
 
 nav>h4>a {
@@ -75,51 +78,83 @@ nav>ul>li {
     justify-content: space-between;
     width: 600px;
 }
-.logo{
+
+.logo {
     font-weight: 900;
-    color: #FFF !important;
 }
 
-.navbar-nav a{
-    color: #fff !important;
+.navbar-nav a {
     font-weight: 400;
 }
-.marcador{
-    color:#cc9933 !important ;
+
+.marcador {
+    color: #cc9933 !important;
 }
-.notificacao{
+
+.hot {
+    position: absolute;
+    background-color: #f34317;
+    font-size: 8px;
+    top: 11px;
+    right: 700px;
+    padding: 1px 3px 1px 3px;
+}
+
+.new {
+    position: absolute;
+    background-color: #68a2ec;
+    font-size: 8px;
+    top: 10px;
+    padding: 1px 3px 1px 3px;
+}
+
+.notificacao {
     position: absolute;
     border-radius: 50%;
-    background-color: #cc9933;
-    color: #fff;
-    font-size: 8px;
-    padding: 5px;
+    background-color: #e1b547;
+    text-align: center;
+    width: 19px;
+    font-size: 9px;
+    padding: 3px;
+    top: 9px;
+    right: 75px;
+}
+
+.logo, .navbar, .navbar-nav a, .notificacao {
+    color: #fff !important;
 }
 
 /******************************** CONFIGURAÇÕES CONTAINER FLUID ***************************/
 
 .container-fluid {
     border: 2px solid black;
-    width: 1090px;
-    margin-top: 30px;
+    max-width: 80rem;
+    top: 200px;
+    overflow: hidden;
+    margin: auto;
     padding: 0;
 }
 
 /******************************** CONFIGURAÇÕES CONTAINER CARROSEL ***************************/
 
-.carousel {
+.carousel-principal {
     border: 2px solid red;
     width: 100%;
+    top: 200px;
 }
 
 .img-carousel {
-    object-fit: contain;
+    max-width: 100%;
+    height: 500px;
+    object-fit: cover;
 }
 
 .carousel-descricao {
+    border: 5px solid #fff;
     position: absolute;
     bottom: 100px;
     left: 150px;
+    padding: 10px;
     color: #FFF;
 }
 
@@ -130,28 +165,38 @@ nav>ul>li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
 }
 
 .container-free>p {
     border: 2px solid red;
     border: 1px dashed #c3c3c3;
     display: flex;
+    align-items: center;
     width: 350px;
-    height: 100px;
     padding: 20px;
+    margin: 0;
 }
 
-p>i {
+.container-free>p:hover {
+    border: 1px dashed #e1b547;
+    color: #e1b547;
+}
+
+.container-free p>i {
     border: 1px solid yellow;
     padding: 10px;
+    font-size: 1.7rem;
+    margin: 10px;
 }
 
 /******************************** CONFIGURAÇÕES CONTAINER SESSÃO FREE ***************************/
 
 .container-destaques-hoje {
-    border: 1px solid red;
+    border: 1px solid #888;
     display: flex;
     flex-direction: row;
+
 }
 
 .destaque-img-descricao {
@@ -159,13 +204,16 @@ p>i {
     background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/img-destaques-hoje.jpg');
     background-size: cover;
     color: #fff;
-    width: 310px;
-    height: 500px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 23px;
+}
+
+.destaque-img-descricao:hover {
+    background: linear-gradient(rgba(0, 0, 0, .30), rgba(0, 0, 0, .30)100%), url('/img/img-destaques-hoje.jpg');
+    background-size: cover;
 }
 
 .destaque-img-descricao h3 {
@@ -217,15 +265,24 @@ p>i {
     border-radius: 50%;
     text-align: center;
     font-size: 11px;
+    text-decoration: none;
     color: #222;
     text-transform: uppercase;
     vertical-align: middle;
     display: table-cell;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .sessao-categorias div {
     border: 2px solid black;
     text-align: center;
+}
+
+.sessao-categorias li a>span:hover {
+    color: #cc9933;
 }
 
 .lista-categoria {
@@ -235,13 +292,6 @@ p>i {
     justify-content: space-between;
     list-style: none;
     width: 100%;
-}
-
-.lista-categoria li a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .img-categorias {
@@ -257,9 +307,10 @@ p>i {
     display: flex;
     justify-content: flex-end;
     flex-direction: row-reverse;
+    border: 1px solid #888;
 }
 
-.artigos-icluidos {
+.artigos-incluidos {
     border: 1px solid yellow;
     background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/img-artigos-inclusos.jpg');
     background-size: cover;
@@ -274,29 +325,220 @@ p>i {
     padding: 23px;
 }
 
-/******************************** CONFIGURAÇÕES CONTAINER CAROUSEL  ***************************/
 
-.Box-fotos {
-    border: 2px solid red;
-    width: 250px;
-    height: 250px;
-    display: block;
-    cursor: pointer;
+.artigos-incluidos:hover{
+    background: linear-gradient(rgba(0, 0, 0, .30), rgba(0, 0, 0, .30)100%), url('/img/img-artigos-inclusos.jpg');
+    background-size: cover;
 }
-
-.item {
-    border: 2px solid blue;
+/******************************** CONFIGURAÇÕES CONTAINER CAROUSEL  ***************************/
+.carousel {
+    border: 2px solid red;
+    width: 800px;
+    height: 300px;
     margin: 10px;
 }
 
-.Carousel-fotos {
-    border: 2px solid yellow;
+.flickity-button {
+    border: 2px solid red;
+
+}
+
+.carousel-cell {
+    border: 2px solid green;
+    width: 250px;
+    height: 220px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+    border: 2px solid blue;
+    width: 250px;
+    height: 220px;
+}
+
+#colar {
+    background-image: url(/img/Colar.jpeg);
+    background-size: cover;
+}
+
+#relogio {
+    background-image: url(/img/Relogio.jpeg);
+    background-size: cover;
+}
+
+#pulseira {
+
+    background-image: url(/img/Pulseira.jpeg);
+    background-size: cover;
+}
+
+#brinco {
+
+    background-image: url(/img/Brinco.jpeg);
+    background-size: cover;
+}
+
+#oculos {
+    background-image: url(/img/Oculos.jpeg);
+    background-size: cover;
+}
+
+figure section {
+    border: 2px solid black;
+    position: relative;
+    top: 130px;
+    padding: 3px;
+    text-align: start;
+    line-height: 15px;
+    font-weight: 900;
+    font-family: 'Oswald';
+}
+
+figure section span {
+    position: absolute;
+    bottom: 180px;
+    background-color: #cc9933;
+    padding: 3px;
+    color: #fff;
+    z-index: 3;
+}
+
+.carousel-cell .content {
+    border: 2px solid blue;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 90%;
-    height: 500px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    opacity: 0;
+}
+
+.carousel-cell:hover .content {
+    position: absolute;
+    background-size: 500px;
+    background-position: center center;
+    width: 100%;
+    height: 215px;
+    top: 0;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.carousel-cell:hover .content0 {
+    background-image: url(/img/Colar.jpeg);
+}
+
+.carousel-cell:hover .content1 {
+    background-image: url(/img/Relogio.jpeg);
+}
+
+.carousel-cell:hover .content2 {
+    background-image: url(/img/Pulseira.jpeg);
+}
+
+.carousel-cell:hover .content3 {
+    background-image: url(/img/Brinco.jpeg);
+}
+
+.carousel-cell:hover .content4 {
+    background-image: url(/img/Oculos.jpeg);
+}
+
+.search-heart {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5px;
+    height: 100px;
+}
+
+.carousel-cell i {
+    background-color: #ffff;
+    font-size: 1.3rem;
+    padding: 10px;
+    margin: 5px;
+}
+
+.carousel-cell i:hover {
+    background-color: #cc9933;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+/******************************** CONFIGURAÇÕES CAROUSEUL ROUPAS  ********************************/
+.carousel-cell:hover .mod-content {
+    position: absolute;
+    background-position: center center;
+    width: 100%;
+    height: 215px;
+    top: 0;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.carousel-cell .mod-content{
+    border: 2px solid blue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    opacity: 0;
+}
+
+
+
+
+#mod1 {
+    background: url(/img/Modelo1.jpeg) no-repeat;
+    background-size: cover;
+}
+
+#mod2 {
+    background: url(/img/Modelo2.jpeg) no-repeat;
+    background-size: cover;
+}
+
+#mod3 {
+    background: url(/img/Modelo3.jpeg) no-repeat;
+    background-size: cover;
+}
+
+#mod4 {
+    background: url(/img/Modelo4.jpeg) no-repeat;
+    background-size: cover;
+}
+
+#mod5 {
+    background: url(/img/Modelo5.jpeg) no-repeat;
+    background-size: cover;
+}
+
+
+
+.carousel-cell:hover .mod-hover1{
+    background: url(/img/Modelohover1.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.carousel-cell:hover .mod-hover2{
+    background: url(/img/Modelohover2.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.carousel-cell:hover .mod-hover3{
+    background: url(/img/Modelohover3.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.carousel-cell:hover .mod-hover4{
+    background: url(/img/Modelohover4.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.carousel-cell:hover .mod-hover5{
+    background: url(/img/Modelohover5.jpeg) no-repeat;
+    background-size: cover;
 }
 
 /******************************** CONFIGURAÇÕES CONTAINER LOGO MARCAS  ***************************/
@@ -386,7 +628,6 @@ footer {
     border: 1px solid red;
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
     background: #F0F0F0;
 }
 
@@ -394,7 +635,6 @@ footer article {
     border: 2px solid yellow;
     width: 1090px;
     margin: auto;
-    margin-bottom: 100px;
 }
 
 .section-entregas {
@@ -413,6 +653,10 @@ footer article {
 
 .section-entregas i {
     font-size: 1.5rem;
+}
+
+.section-entregas p {
+    font-family: 'Oswald';
 }
 
 footer aside {
@@ -439,7 +683,7 @@ footer aside section {
 }
 
 footer aside section h5 {
-    border:2px solid red;
+    border: 2px solid red;
     color: #141414;
     margin-bottom: 50px;
 }
@@ -461,8 +705,8 @@ footer aside section h5 {
     text-align: center;
     color: #141414;
     margin-bottom: 50px;
-
 }
+
 .section-new-redes-sociais {}
 
 .section-new-redes-sociais .input-newsletter {
@@ -512,4 +756,14 @@ footer aside section h5 {
 
 .bandeiras ul li {
     list-style: none;
+}
+
+/******************************* CONFIGURAÇÕES DE CODIGOS COM AS MESMAS PROPRIEDADES  ***************************/
+
+.container-free, .carousel, .container-destaques-hoje, .container-categorias, .container-artigos, .container-logos-marcas, .container-free-delivery, .container-destaques-hoje, .container-blog, footer {
+    margin-bottom: 80px;
+}
+
+.destaque-img-descricao p, .artigos-icluidos p, .sessao-categorias section p, .sessao-blog p {
+    font-family: 'Playfair Display', serif;
 }

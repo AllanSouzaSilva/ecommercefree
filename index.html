@@ -14,28 +14,28 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
     <link rel="styleseet" href="style/responsive.css">
-    <!--   Link carousel -->
 
-    <link rel="stylesheet" href="/style/olw/owl.carousel.min.css">
-    <link rel="stylesheet" href="/style/olw/owl.theme.default.min.css">
     <!-- Fontes de letras -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Oswald:wght@200&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <!-- Carousel produtos -->
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!-- Script -->
 
     <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
 
     <script src="/javascript/setup.js"></script>
     <title>Ecommerce | Free</title>
-
 </head>
 
 <body>
-    <header class="cabecalho-nav">
+    <header class="cabecalho-nav position-fixed">
         <!-- INICIO NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-dark">
             <h4><a class="nav-link logo" href="#">BOUTIQUE</a></h4>
@@ -46,28 +46,33 @@
             <div class="collapse navbar-collapse" id="navbar-links">
                 <div class="navbar-nav">
                     <a class="nav-link marcador" href="#">Home</a>
-                    <a class=" nav-link" href="#">Masculino</a>
-                    <a class=" nav-link" href="#">Feminino</a>
+                    <a class=" nav-link" href="#">Masculino
+                        <span class="hot">HOT</span>
+                    </a>
+                    <a class=" nav-link" href="#">Feminino
+                        <span class="new">NEW</span>
+                    </a>
                     <a class="nav-link" href="#">Acessórios</a>
                     <a class="nav-link" href="#">Contatos</a>
                 </div>
             </div>
             <ul>
-                <li><i class="fas fa-shopping-cart"></i>
-                <span class="notificacao">
-                    0
-                </span> </li>
                 <li><i class="fa fa-search"></i></li>
+                <li><i class="fas fa-shopping-cart"></i>
+                    <span class="notificacao">
+                        0
+                    </span>
+                </li>
                 <li><i class="fas fa-cog"></i></li>
             </ul>
         </nav><!-- FIM NAVBAR -->
     </header><!-- FIM CABECLHO-->
-
     <!-- INICIO CAROUSEL -->
-    <article id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <article id="carouselExampleControls" class="carousel-principal slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100 img-carousel" src="img/imagecarousel1.jpg" alt="Primeiro Slide">
+                <img class="d-block w-100 img-carousel" src="img/imagem.jpeg" loading="lady"
+                    alt="Primeiro Slide">
                 <div class=" d-block w-100 img-back">
                     <aside class="carousel-descricao">
                         <h2>Reclamed!</h2>
@@ -78,7 +83,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 img-carousel" src="img/imagecarousel2.jpg" alt="Segundo Slide">
+                <img class="d-block w-100 img-carousel" src="img/imagem2.jpeg" loading="lady" alt="Segundo Slide">
                 <aside class="carousel-descricao">
                     <h2>Solid Classic!</h2>
                     <h1>LEATHER BIKER JACKET</h1>
@@ -87,12 +92,12 @@
                 </aside>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 img-carousel" src="img/imagecarousel3.jpg" alt="Terceiro Slide">
+                <img class="d-block w-100 img-carousel" src="img/imagem.jpeg3" loading="lady"
+                    alt="Terceiro Slide">
                 <aside class="carousel-descricao">
                     <h2>Geometric</h2>
                     <h1>TOMMY FARGO SNOOD</h1>
                     <P>The big difference nunge of accessories!</P>
-
                     <P>SHOP NOW!</P>
                 </aside>
             </div>
@@ -106,7 +111,10 @@
             <span class="sr-only">Próximo</span>
         </a>
     </article><!-- FIM CAROUSEL -->
+
+
     <main class="container-fluid">
+
         <!-- INICIO CONTAINER FLUID -->
         <article class="container-free">
             <!-- Inicio free-->
@@ -123,32 +131,133 @@
                 <a class="link-destaques" href="#">Compre mais itens</a>
             </section>
             <!-- INICIO CAROUSEL -->
-            <div id="carouselControles" class="Carousel-fotos">
-                <div class="olw-carousel owl-theme">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <img class="Box-fotos" src="/img/img-artigos-inclusos.jpg" alt="">
-                            <h5>Wath Men New Arrival Classic Canvas</h5>
-                            <p>R$85.00</p>
+            <!-- Flickity HTML init -->
+            <article class="carousel" data-flickity='{ "groupCells": true }'>
+                <figure class="carousel-cell" id="colar">
+                    <section>
+                        <p>Colar louis vuitton</p>
+                        <h6>$85.00</h6>
+                    </section>
+                    <article class=" content  content0">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
                         </div>
-                        <div class="item">
-                            <img class="Box-fotos" src="/img/img-artigos-inclusos.jpg" alt="">
-                            <h5>Wath Men New Arrival Classic Canvas</h5>
-                            <p>R$85.00</p>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="relogio">
+                    <section>
+                        <span>Sale!</span>
+                        <p>Relógio homen novo Classico canvas</p>
+                        <h6>$95.00</h6>
+                    </section>
+                    <article class=" content content1">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
                         </div>
-                        <div class="item">
-                            <img class="Box-fotos" src="/img/img-artigos-inclusos.jpg" alt="">
-                            <h5>Wath Men New Arrival Classic Canvas</h5>
-                            <p>R$85.00</p>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="pulseira">
+                    <section>
+                        <p>Pulseira hugo boss</p>
+                        <h6>$185.00</h6>
+                    </section>
+                    <article class=" content content2">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
                         </div>
-                        <div class="item">
-                            <img class="Box-fotos" src="/img/img-artigos-inclusos.jpg" alt="">
-                            <h5>Wath Men New Arrival Classic Canvas</h5>
-                            <p>R$85.00</p>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="brinco">
+                    <section>
+                        <p>Brincos vitória regía</p>
+                        <h6>$55.00</h6>
+                    </section>
+                    <article class=" content content3">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="oculos">
+                    <section>
+                        <p>Óculos Chilli beans</p>
+                        <h6>$85.00</h6>
+                    </section>
+                    <article class=" content content4">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="colar">
+                    <section>
+                        <p>Colar louis vuitton</p>
+                        <h6>$85.00</h6>
+                    </section>
+                    <article class=" content  content0">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="relogio">
+                    <section>
+                        <span>Sale!</span>
+                        <p>Relógio homen novo Classico canvas</p>
+                        <h6>$95.00</h6>
+                    </section>
+                    <article class=" content content1">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="pulseira">
+                    <section>
+                        <p>Pulseira hugo boss</p>
+                        <h6>$185.00</h6>
+                    </section>
+                    <article class=" content content2">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="brinco">
+                    <section>
+                        <p>Brincos vitória regía</p>
+                        <h6>$55.00</h6>
+                    </section>
+                    <article class=" content content3">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="oculos">
+                    <section>
+                        <p>Óculos Chilli beans</p>
+                        <h6>$85.00</h6>
+                    </section>
+                    <article class=" content content4">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </article>
+                </figure>
+
+            </article>
+
             <!-- FIM CAROUSEL -->
         </article>
         <!-- INICIO CATEGORIAS -->
@@ -177,7 +286,7 @@
                         <a href="#">
                             <img class="img-categorias"
                                 src="https://cdn.shopify.com/s/files/1/0020/8401/2093/files/cat_icon_4_small.png?v=1523505460"
-                                alt="Icon tênis">
+                                loading="lady" alt="Icon tênis">
                             <span>
                                 MOCHILAS
                             </span>
@@ -187,7 +296,7 @@
                         <a href="#">
                             <img class="img-categorias"
                                 src="https://cdn.shopify.com/s/files/1/0020/8401/2093/files/cat_icon_3_small.png?v=1523505446"
-                                alt="Icon acessorios">
+                                loading="lady" alt="Icon acessorios">
                             <span>
                                 Acessorios
                             </span>
@@ -197,7 +306,7 @@
                         <a href="#">
                             <img class="img-categorias"
                                 src="https://cdn.shopify.com/s/files/1/0020/8401/2093/files/cat_icon_2_small.png?v=1523505430"
-                                alt="Icon tênis">
+                                loading="lady" alt="Icon tênis">
                             <span>
                                 TÊNIS
                             </span>
@@ -210,38 +319,138 @@
 
         <!-- IINICIO ARTIGOS INCLUIDOS -->
         <article class="container-artigos">
-            <section class="artigos-icluidos">
+            <section class="artigos-incluidos">
                 <h4>ARTIGOS INCLUIDOS</h4>
                 <P>Nosso destaque hoje!</P>
                 <a class="link-destaques" href="#">Compre mais itens</a>
             </section>
             <!-- INICIO CAROUSEL -->
-            <div id="carouselControles" class="Carousel-fotos">
-                <div class="olw-carousel owl-theme">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <img class="Box-fotos" src="/img/img-artigos-inclusos.jpg" alt="">
-                            <h5>Wath Men New Arrival Classic Canvas</h5>
-                            <p>R$85.00</p>
+            <!-- Flickity HTML init -->
+            <article class="carousel" data-flickity='{ "groupCells": true }'>
+                <figure class="carousel-cell" id="mod1">
+                    <section>
+                        <p>Camisa casual louis vuitton</p>
+                        <h6>$85.00</h6>
+                    </section>
+                    <article class=" mod-content mod-hover1">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
                         </div>
-                        <div class="item">
-                            <img class="Box-fotos" src="/img/img-artigos-inclusos.jpg" alt="">
-                            <h5>Wath Men New Arrival Classic Canvas</h5>
-                            <p>R$85.00</p>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="mod2">
+                    <section>
+                        <span>Sale!</span>
+                        <p>Relógio homen novo Classico canvas</p>
+                        <h6>$95.00</h6>
+                    </section>
+                    <article class=" mod-content mod-hover2">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
                         </div>
-                        <div class="item">
-                            <img class="Box-fotos" src="/img/img-artigos-inclusos.jpg" alt="">
-                            <h5>Wath Men New Arrival Classic Canvas</h5>
-                            <p>R$85.00</p>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="mod3">
+                    <section>
+                        <p>Camisa esporte Hugo Boss</p>
+                        <h6>$185.00</h6>
+                    </section>
+                    <article class=" mod-content mod-hover3">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
                         </div>
-                        <div class="item">
-                            <img class="Box-fotos" src="/img/img-artigos-inclusos.jpg" alt="">
-                            <h5>Wath Men New Arrival Classic Canvas</h5>
-                            <p>R$85.00</p>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="mod4">
+                    <section>
+                        <p>Camisa Dudalina</p>
+                        <h6>$55.00</h6>
+                    </section>
+                    <article class=" mod-content mod-hover4">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="mod5">
+                    <section>
+                        <p>Camisa Sergio K</p>
+                        <h6>$85.00</h6>
+                    </section>
+                    <article class=" mod-content mod-hover5">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="mod1">
+                    <section>
+                        <p>Camisa casual louis vuitton</p>
+                        <h6>$85.00</h6>
+                    </section>
+                    <article class=" mod-content mod-hover1">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="mod2">
+                    <section>
+                        <span>Sale!</span>
+                        <p>Relógio homen novo Classico canvas</p>
+                        <h6>$95.00</h6>
+                    </section>
+                    <article class=" mod-content mod-hover2">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="mod3">
+                    <section>
+                        <p>Camisa esporte Hugo Boss</p>
+                        <h6>$185.00</h6>
+                    </section>
+                    <article class=" mod-content mod-hover3">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="mod4">
+                    <section>
+                        <p>Camisa Dudalina</p>
+                        <h6>$55.00</h6>
+                    </section>
+                    <article class=" mod-content mod-hover4">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="mod5">
+                    <section>
+                        <p>Camisa Sergio K</p>
+                        <h6>$85.00</h6>
+                    </section>
+                    <article class=" mod-content mod-hover5">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </article>
+                </figure>
+            </article>
+
             <!-- FIM CAROUSEL -->
         </article>
 
@@ -251,28 +460,28 @@
                 <li>
                     <img src="//cdn.shopify.com/s/files/1/0020/8401/2093/files/brand5_480x@2x.png?v=1523505959"
                         data-src="//cdn.shopify.com/s/files/1/0020/8401/2093/files/brand5_480x@2x.png?v=1523505959"
-                        alt="Logo  de marcas ficticia">
+                        loading="lady" alt="Logo  de marcas ficticia">
                 </li>
                 <li>
                     <img src="//cdn.shopify.com/s/files/1/0020/8401/2093/files/brand1_480x@2x.png?v=1523505959"
                         data-src="//cdn.shopify.com/s/files/1/0020/8401/2093/files/brand1_480x@2x.png?v=1523505959"
-                        alt="Logo  de marcas ficticia">
+                        loading="lady" alt="Logo  de marcas ficticia">
                 </li>
                 <li>
                     <img src="//cdn.shopify.com/s/files/1/0020/8401/2093/files/brand2_480x@2x.png?v=1523505959"
                         data-src="//cdn.shopify.com/s/files/1/0020/8401/2093/files/brand2_480x@2x.png?v=1523505959"
-                        alt="Logo  de marcas ficticia">
+                        loading="lady" alt="Logo  de marcas ficticia">
                 </li>
                 <li>
                     <img src="//cdn.shopify.com/s/files/1/0020/8401/2093/files/brand3_480x@2x.png?v=1523505959"
                         data-src="//cdn.shopify.com/s/files/1/0020/8401/2093/files/brand3_480x@2x.png?v=1523505959"
-                        alt="Logo  de marcas ficticia">
+                        loading="lady" alt="Logo  de marcas ficticia">
                 </li>
                 <li>
                     <img class=" lazyloaded"
                         src="//cdn.shopify.com/s/files/1/0020/8401/2093/files/brand4_480x@2x.png?v=1523505959"
                         data-src="//cdn.shopify.com/s/files/1/0020/8401/2093/files/brand4_480x@2x.png?v=1523505959"
-                        alt="Logo  de marcas ficticia">
+                        loading="lady" alt="Logo  de marcas ficticia">
                 </li>
             </ul>
         </article><!-- FIM LISTA LOGO MARCAS-->
@@ -281,7 +490,7 @@
         <article class="container-free-delivery">
             <aside class="delivery">
                 <p>FREE UK DELIVERY + RETURN OVER £85.00 (EXCLUDING HOMEWARE)| FREE UK COLLECT FROM STORE</p>
-                <div><img class="icon-tesoura" src="img/tesourinha.png" alt=""></div>
+                <div><img class="icon-tesoura" src="img/tesourinha.png" loading="lady" alt=""></div>
             </aside>
         </article>
         <!-- INICIO CONTAINER DESTAQUE DE HOJE -->
@@ -292,41 +501,142 @@
                 <a class="link-destaques" href="#">Compre mais itens</a>
             </section>
             <!-- INICIO CAROUSEL -->
-            <div id="carouselControles" class="Carousel-fotos">
-                <div class="olw-carousel owl-theme">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <img class="Box-fotos" src="/img/img-artigos-inclusos.jpg" alt="">
-                            <h5>Wath Men New Arrival Classic Canvas</h5>
-                            <p>R$85.00</p>
+            <!-- Flickity HTML init -->
+            <article class="carousel" data-flickity='{ "groupCells": true }'>
+                <figure class="carousel-cell" id="colar">
+                    <section>
+                        <p>Colar louis vuitton</p>
+                        <h6>$85.00</h6>
+                    </section>
+                    <article class=" content  content0">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
                         </div>
-                        <div class="item">
-                            <img class="Box-fotos" src="/img/img-artigos-inclusos.jpg" alt="">
-                            <h5>Wath Men New Arrival Classic Canvas</h5>
-                            <p>R$85.00</p>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="relogio">
+                    <section>
+                        <span>Sale!</span>
+                        <p>Relógio homen novo Classico canvas</p>
+                        <h6>$95.00</h6>
+                    </section>
+                    <article class=" content content1">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
                         </div>
-                        <div class="item">
-                            <img class="Box-fotos" src="/img/img-artigos-inclusos.jpg" alt="">
-                            <h5>Wath Men New Arrival Classic Canvas</h5>
-                            <p>R$85.00</p>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="pulseira">
+                    <section>
+                        <p>Pulseira hugo boss</p>
+                        <h6>$185.00</h6>
+                    </section>
+                    <article class=" content content2">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
                         </div>
-                        <div class="item">
-                            <img class="Box-fotos" src="/img/img-artigos-inclusos.jpg" alt="">
-                            <h5>Wath Men New Arrival Classic Canvas</h5>
-                            <p>R$85.00</p>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="brinco">
+                    <section>
+                        <p>Brincos vitória regía</p>
+                        <h6>$55.00</h6>
+                    </section>
+                    <article class=" content content3">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="oculos">
+                    <section>
+                        <p>Óculos Chilli beans</p>
+                        <h6>$85.00</h6>
+                    </section>
+                    <article class=" content content4">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="colar">
+                    <section>
+                        <p>Colar louis vuitton</p>
+                        <h6>$85.00</h6>
+                    </section>
+                    <article class=" content  content0">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="relogio">
+                    <section>
+                        <span>Sale!</span>
+                        <p>Relógio homen novo Classico canvas</p>
+                        <h6>$95.00</h6>
+                    </section>
+                    <article class=" content content1">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="pulseira">
+                    <section>
+                        <p>Pulseira hugo boss</p>
+                        <h6>$185.00</h6>
+                    </section>
+                    <article class=" content content2">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="brinco">
+                    <section>
+                        <p>Brincos vitória regía</p>
+                        <h6>$55.00</h6>
+                    </section>
+                    <article class=" content content3">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </article>
+                </figure>
+                <figure class="carousel-cell" id="oculos">
+                    <section>
+                        <p>Óculos Chilli beans</p>
+                        <h6>$85.00</h6>
+                    </section>
+                    <article class=" content content4">
+                        <div class="search-heart">
+                            <i class="far fa-heart"></i>
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </article>
+                </figure>
+
+            </article>
+
             <!-- FIM CAROUSEL -->
         </article>
-
         <article class="container-blog">
             <header class="sessao-blog">
                 <h3>OUR BLOG</h3>
                 <p>Find more our news & Promotions</p>
             </header>
             <aside class="sessao-blog-post">
+                
                 <section>
                     <div class="sessao-post">
                         <span>
@@ -337,7 +647,7 @@
                         <p>ecommerce-Free Admin | 0 <i class="fas fa-comment"></i>comment</p>
                     </div>
                     <figure class="img-post">
-                        <img class="img-blog" src="img/img-artigos-inclusos.jpg" alt="">
+                        <img class="img-blog" src="img/img-artigos-inclusos.jpg" loading="lady" alt="">
                     </figure>
                 </section>
                 <section>
@@ -350,15 +660,14 @@
                         <p>ecommerce-Free Admin | 0 <i class="fas fa-comment"></i>comment</p>
                     </div>
                     <figure class="img-post">
-                        <img class="img-blog" src="img/img-artigos-inclusos.jpg" alt="">
+                        <img class="img-blog" src="img/img-artigos-inclusos.jpg" loading="lady" alt="">
                     </figure>
                 </section>
-
-
             </aside>
         </article>
     </main><!-- FIM CONTAINER FLUID -->
     <!-- INICIO RODAPÉ-->
+
     <footer>
         <article>
             <section class="section-entregas">
@@ -481,7 +790,13 @@
         <main></main>
         <figure></figure>
         <section></section>-->
+
+
     <!-- Script bootstrap -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -492,8 +807,6 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-    <script src="javascript/olw/jquery.min.js"></script>
-    <script src="javascript/olw/owl.carousel.min.js"></script>
     <script src="javascript/setup.js"></script>
 </body>
 
