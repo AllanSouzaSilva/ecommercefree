@@ -38,7 +38,6 @@ img {
     justify-content: center;
     align-items: center;
     width: 100%;
-    z-index: 999;
 }
 
 .navbar {
@@ -84,29 +83,69 @@ nav>ul>li {
 }
 
 .navbar-nav a {
+    border: 2px solid red;
+    height: 40px;
     font-weight: 400;
 }
 
-.marcador {
+#marcador {
     color: #cc9933 !important;
+    text-align: center;
+    width: 65px;
+    height: 50px;
 }
 
-.hot {
-    position: absolute;
-    background-color: #f34317;
-    font-size: 8px;
-    top: 11px;
-    right: 700px;
-    padding: 1px 3px 1px 3px;
+.container-navhover {
+    opacity: 0;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.new {
+.nav-link:hover .container-navhover {
     position: absolute;
-    background-color: #68a2ec;
-    font-size: 8px;
-    top: 10px;
-    padding: 1px 3px 1px 3px;
+    width: 600px;
+    height: 550px;
+    bottom: 0;
+    left: 165px;
+    top: 60px;
+    background-color: #888;
+    border-radius: 8px;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 999;
+    overflow: hidden;
 }
+
+
+.container-navhover .grupo-navhover .lista-navhover {
+    border: 2px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin: 5px;
+    padding: 5px;
+    background-color: #fff !important;
+}
+
+.container-navhover .grupo-navhover .lista-navhover li {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #fff;
+    filter: drop-shadow(0 0 2px #141414);
+    list-style: none;
+}
+
+.img-logo-navhover {
+    border: 2px solid #0d0d0d;
+    object-fit:contain;
+    width: 100px;
+    height: 100px;
+}
+
 
 .notificacao {
     position: absolute;
@@ -118,6 +157,23 @@ nav>ul>li {
     padding: 3px;
     top: 9px;
     right: 75px;
+}
+
+.hot {
+    position: absolute;
+    background-color: #f34317;
+    font-size: 8px;
+    top: 13px;
+    right: 720px;
+    padding: 1px 3px 1px 3px;
+}
+
+.new {
+    position: absolute;
+    background-color: #68a2ec;
+    font-size: 8px;
+    top: 13px;
+    padding: 1px 3px 1px 3px;
 }
 
 .logo, .navbar, .navbar-nav a, .notificacao {
@@ -176,11 +232,13 @@ nav>ul>li {
     width: 350px;
     padding: 20px;
     margin: 0;
+    cursor: pointer;
 }
 
 .container-free>p:hover {
     border: 1px dashed #e1b547;
     color: #e1b547;
+    transition: 0.5s;
 }
 
 .container-free p>i {
@@ -209,11 +267,13 @@ nav>ul>li {
     flex-direction: column;
     justify-content: flex-start;
     padding: 23px;
+    cursor: pointer;
 }
 
 .destaque-img-descricao:hover {
     background: linear-gradient(rgba(0, 0, 0, .30), rgba(0, 0, 0, .30)100%), url('/img/img-destaques-hoje.jpg');
     background-size: cover;
+    transition: 0.5s;
 }
 
 .destaque-img-descricao h3 {
@@ -283,6 +343,7 @@ nav>ul>li {
 
 .sessao-categorias li a>span:hover {
     color: #cc9933;
+    transition: 0.5s;
 }
 
 .lista-categoria {
@@ -323,19 +384,23 @@ nav>ul>li {
     justify-content: flex-star;
     align-items: flex-start;
     padding: 23px;
+
+    cursor: pointer;
 }
 
 
-.artigos-incluidos:hover{
+.artigos-incluidos:hover {
     background: linear-gradient(rgba(0, 0, 0, .30), rgba(0, 0, 0, .30)100%), url('/img/img-artigos-inclusos.jpg');
     background-size: cover;
+    transition: 0.5s;
 }
+
 /******************************** CONFIGURAÇÕES CONTAINER CAROUSEL  ***************************/
 .carousel {
     border: 2px solid red;
-    width: 800px;
+    width: 950px;
     height: 300px;
-    margin: 10px;
+    margin: auto;
 }
 
 .flickity-button {
@@ -349,12 +414,14 @@ nav>ul>li {
     height: 220px;
     border-radius: 5px;
     counter-increment: carousel-cell;
+    margin-right: 15px !important;
 }
 
 .carousel-cell.is-selected {
     border: 2px solid blue;
     width: 250px;
     height: 220px;
+    margin-right: 15px !important;
 }
 
 #colar {
@@ -425,22 +492,27 @@ figure section span {
 
 .carousel-cell:hover .content0 {
     background-image: url(/img/Colar.jpeg);
+    transition: 0.5s;
 }
 
 .carousel-cell:hover .content1 {
     background-image: url(/img/Relogio.jpeg);
+    transition: 0.5s;
 }
 
 .carousel-cell:hover .content2 {
     background-image: url(/img/Pulseira.jpeg);
+    transition: 0.5s;
 }
 
 .carousel-cell:hover .content3 {
     background-image: url(/img/Brinco.jpeg);
+    transition: 0.5s;
 }
 
 .carousel-cell:hover .content4 {
     background-image: url(/img/Oculos.jpeg);
+    transition: 0.5s;
 }
 
 .search-heart {
@@ -478,7 +550,7 @@ figure section span {
 }
 
 
-.carousel-cell .mod-content{
+.carousel-cell .mod-content {
     border: 2px solid blue;
     display: flex;
     justify-content: flex-end;
@@ -516,29 +588,34 @@ figure section span {
 
 
 
-.carousel-cell:hover .mod-hover1{
+.carousel-cell:hover .mod-hover1 {
     background: url(/img/Modelohover1.jpeg) no-repeat;
     background-size: cover;
+    transition: 0.5s;
 }
 
-.carousel-cell:hover .mod-hover2{
+.carousel-cell:hover .mod-hover2 {
     background: url(/img/Modelohover2.jpeg) no-repeat;
     background-size: cover;
+    transition: 0.5s;
 }
 
-.carousel-cell:hover .mod-hover3{
+.carousel-cell:hover .mod-hover3 {
     background: url(/img/Modelohover3.jpeg) no-repeat;
     background-size: cover;
+    transition: 0.5s;
 }
 
-.carousel-cell:hover .mod-hover4{
+.carousel-cell:hover .mod-hover4 {
     background: url(/img/Modelohover4.jpeg) no-repeat;
     background-size: cover;
+    transition: 0.5s;
 }
 
-.carousel-cell:hover .mod-hover5{
+.carousel-cell:hover .mod-hover5 {
     background: url(/img/Modelohover5.jpeg) no-repeat;
     background-size: cover;
+    transition: 0.5s;
 }
 
 /******************************** CONFIGURAÇÕES CONTAINER LOGO MARCAS  ***************************/
@@ -580,39 +657,37 @@ figure section span {
 
 .container-blog {
     border: 2px solid red;
-}
-
-.sessao-blog {
-    border: 2px solid blue;
     text-align: center;
 }
 
-.sessao-post {
+.sessao-blog span {
+    text-decoration: line-through #cc9933;
+    width: 50px;
+}
+
+/******************************** CONFIGURAÇÕES CAROUSEL  ***************************/
+
+
+.carrosel-promocao {
+    border: 2px solid red;
+    margin-top: 5px;
+}
+
+.owl-carousel section {
     border: 2px solid yellow;
-}
-
-.sessao-blog-post {
-    border: 2px solid black;
     display: flex;
-    flex-direction: row;
-}
-
-.sessao-blog-post section {
-    display: flex;
-    flex-direction: row;
-}
-
-.img-blog {
-    border: 1px solid black;
+    align-items: center;
+    height: 300px;
     width: 300px;
-    height: 370px;
-    max-width: 100%;
+
 }
 
 .sessao-post span {
     border: 2px solid red;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+
 }
 
 .sessao-post span p {
@@ -620,6 +695,125 @@ figure section span {
     display: flex;
     flex-direction: column;
     width: 50px;
+}
+
+.sessao-post span h1 {
+    border: 1px solid yellow;
+    margin: 0;
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+.sessao-post h6 {
+    text-align: left;
+    font-weight: 500;
+}
+
+.sessao-post h6:hover {
+    color: #cc9933;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.sessao-post p {
+    border: 2px solid blue;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px 0 10px;
+    font-size: 0.8rem;
+
+}
+
+.fa-comment {
+    color: #cc9933;
+    cursor: pointer;
+    padding: 0 5px 0 5px;
+}
+
+figure {
+    border: 2px solid black;
+    overflow: hidden;
+    min-width: 300px;
+    max-width: 320px;
+    max-height: 300px;
+    width: 295px;
+    height: 300px;
+    cursor: pointer;
+    margin: 0 !important;
+    margin: 0 !important;
+}
+
+figure img {
+    opacity: 0.8;
+}
+
+/*---------------*/
+/***** Layla *****/
+/*---------------*/
+
+
+figure.effect-layla figcaption::before,
+figure.effect-layla figcaption::after {
+    position: absolute;
+    content: '';
+    opacity: 0;
+}
+
+figure.effect-layla figcaption::before {
+    top: 50px;
+    right: 30px;
+    bottom: 50px;
+    left: 30px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+figure.effect-layla figcaption::after {
+    top: 30px;
+    right: 50px;
+    bottom: 30px;
+    left: 50px;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+}
+
+figure.effect-layla img {
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+}
+
+figure.effect-layla img,
+figure.effect-layla figcaption::before,
+figure.effect-layla figcaption::after {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-layla:hover img {
+    opacity: 0.7;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+figure.effect-layla:hover figcaption::before,
+figure.effect-layla:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.box-promocao {
+    display: block;
+    cursor: pointer;
 }
 
 /******************************* CONFIGURAÇÕES CONTAINER RODAPÉ  ***************************/
@@ -680,6 +874,18 @@ footer aside section {
 
 .section-contato div {
     border: 2px solid purple;
+
+}
+
+.section-contato p i {
+    padding-right: 10px;
+}
+
+.section-contato p:hover {
+    cursor: pointer;
+    color: #141414;
+    transition: 0.5s;
+
 }
 
 footer aside section h5 {
@@ -698,30 +904,44 @@ footer aside section h5 {
     border: 1px solid #888;
     padding: 2px 10px 2px 10px;
     margin: 2px;
+    cursor: pointer;
 }
+
+.section-tags-categorias p:hover {
+    color: #F0F0F0;
+    background-color: #919191;
+    transition: 0.5s;
+}
+
+
 
 .section-contato h3 {
-    border: 4px solid #141414;
+    border: 4px solid;
+    border-image: linear-gradient(227.91deg, #141414 0%, #888 100%)1;
     text-align: center;
     color: #141414;
+    padding: 20px;
     margin-bottom: 50px;
+    cursor: pointer;
+    letter-spacing: 10px;
 }
-
-.section-new-redes-sociais {}
 
 .section-new-redes-sociais .input-newsletter {
     border: 2px solid yellow;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     flex-wrap: wrap;
 }
 
 .section-new-redes-sociais .input-newsletter .search-txt {
-    width: 241px;
-    text-align: center;
+    width: 289px;
+    border: 1px solid #c3c3c3;
+    background-color: #F0F0F0;
 }
 
 .section-new-redes-sociais .input-newsletter a .fa-search {
+    border: 2px solid yellow;
     font-size: 1.5rem;
     color: #fff;
     background-color: #141414;
@@ -739,31 +959,82 @@ footer aside section h5 {
 .rede-sociais ul li {
     border: 2px solid green;
     border-radius: 50%;
+    padding: 10px;
     background-color: #fff;
+    cursor: pointer;
 }
 
 .rede-sociais ul li i {
     font-size: 1.5rem;
-    padding: 10px;
+    padding: 5px;
+}
+
+.rede-sociais ul li:hover {
+    background-color: #cc9933;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.bandeiras {
+    background-color: #0d0d0d;
 }
 
 .bandeiras ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1090px;
+    padding: 20px;
+    width: 1048px;
+    margin: auto;
+}
+
+element.style {
+    display: block;
+}
+
+.fa-arrow-up {
+    position: fixed;
+    z-index: 100;
+    right: 10px;
+    bottom: 32px;
+    background-color: #212121;
+    display: none;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    line-height: 40px;
+}
+
+.fa-arrow-up:hover {
+    background-color: #cc9933;
+    color: #FFF;
+    transition: 0.5s;
 }
 
 .bandeiras ul li {
     list-style: none;
 }
 
+.bandeiras ul li img {
+    cursor: pointer;
+}
+
+.bandeiras ul li img:hover {
+    color: black;
+}
+
+.bandeiras .direitos-resera {
+    border: solid red;
+    margin: auto;
+    text-align: center;
+}
+
 /******************************* CONFIGURAÇÕES DE CODIGOS COM AS MESMAS PROPRIEDADES  ***************************/
 
-.container-free, .carousel, .container-destaques-hoje, .container-categorias, .container-artigos, .container-logos-marcas, .container-free-delivery, .container-destaques-hoje, .container-blog, footer {
+.container-free, .carousel, .container-destaques-hoje, .container-categorias, .container-artigos, .container-logos-marcas, .container-free-delivery, .container-destaques-hoje, .container-blog {
     margin-bottom: 80px;
 }
 
-.destaque-img-descricao p, .artigos-icluidos p, .sessao-categorias section p, .sessao-blog p {
+.destaque-img-descricao p, .artigos-icluidos p, .sessao-categorias section p, .sessao-blog p, .bandeiras p {
     font-family: 'Playfair Display', serif;
 }
