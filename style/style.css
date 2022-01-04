@@ -1,3 +1,5 @@
+/* TOKEN DO GITHUB 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 */
+
 * {
     margin: 0;
     padding: 0;
@@ -59,9 +61,8 @@ nav>h4>a {
 nav>ul {
     border: 2px solid red;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 200px;
+    width: 100px;
     margin-top: 15px;
     font-size: 1.2rem;
     list-style: none;
@@ -69,6 +70,7 @@ nav>ul {
 
 nav>ul>li {
     cursor: pointer;
+    padding: 10px;
 }
 
 .navbar-nav {
@@ -110,7 +112,7 @@ nav>ul>li {
     bottom: 0;
     left: 165px;
     top: 60px;
-    background-color: #888;
+    background-color: #FFF;
     border-radius: 8px;
     opacity: 1;
     transition: 0.5s;
@@ -123,7 +125,7 @@ nav>ul>li {
     border: 2px solid blue;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
     margin: 5px;
     padding: 5px;
     background-color: #fff !important;
@@ -133,17 +135,29 @@ nav>ul>li {
     border: 2px solid red;
     display: flex;
     flex-direction: column;
+    padding: 5px;
     border-radius: 10px;
     background-color: #fff;
     filter: drop-shadow(0 0 2px #141414);
     list-style: none;
+    color: #0d0d0d;
+}
+
+.lista-navhover li p::after {
+    content: '';
+    width: 70px;
+    height: 4px;
+    background-color: #079e02;
+    display: block;
+    margin: 5px auto;
 }
 
 .img-logo-navhover {
     border: 2px solid #0d0d0d;
-    object-fit:contain;
-    width: 100px;
-    height: 100px;
+    object-fit: contain;
+    width: 80px;
+    height: 80px;
+    margin: auto;
 }
 
 
@@ -155,8 +169,62 @@ nav>ul>li {
     width: 19px;
     font-size: 9px;
     padding: 3px;
-    top: 9px;
-    right: 75px;
+    top: 19px;
+    left: 93%;
+}
+
+.search_box {
+    border: 2px solid green;
+    position: absolute;
+    top: 50%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    background-color: #212121;
+    border-radius: 40px;
+    padding: 0;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.search_btn {
+    border: 2px solid red;
+    color: #FFF;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #212121;
+    text-align: center;
+    line-height: 40px;
+    transform: all 0.8s ease;
+}
+
+.search_txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0;
+    color: #FFF;
+}
+
+.search_box:hover>.search_txt {
+    border: 2px solid yellow;
+    width: 130px !important;
+    padding: 0 6px;
+}
+
+.search_box:hover>.search_btn {
+    border: 2px solid blue;
+    background-color: #212121;
+}
+
+::placeholder {
+    color: #FFF;
 }
 
 .hot {
