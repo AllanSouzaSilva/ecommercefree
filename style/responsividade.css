@@ -1,0 +1,52 @@
+@media(max-width: 575px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        border: 1px solid red;
+        margin: auto;
+    }
+
+    .cabecalho-nav {
+        border: 2px solid blue;
+        background: #212121;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .container-navhover {
+        display: none;
+    }
+
+    .nav-link:hover .container-navhover {
+        display: none;
+    }
+
+    .container-free,.lista-categoria, .lista-logo {
+        position: relative;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: ms -ms-autohiding-scrollbar;
+    }
+
+    ::-webkit-scrollbar {
+        background-color: #c3c3c3;
+        border-radius: 10px;
+        border: 1px dotted #232323;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #cc9933;
+        border-radius: 10px;
+    }
+    .container-destaques-hoje, .container-artigos{
+        flex-direction: column !important;
+    }
+
+    .section-entregas{
+        display: flex;
+        flex-direction: column !important;
+    }
+}

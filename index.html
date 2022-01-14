@@ -6,14 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <!-- <meta http-equiv="refresh" content="30">-->
+
+    <!-- Carousel produtos -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- <meta http-equiv="refresh" content="30"> <link rel="icon" type="" href="" />-->
     <!-- Icon do navegador -->
-    <link rel="icon" type="image/png" href="" />
+
     <!-- Style -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="/style/responsividade.css">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="styleseet" href="style/responsive.css">
+
 
     <!-- Fontes de letras -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,12 +33,12 @@
     <link rel="stylesheet" href="/style/olw/owl.carousel.min.css">
     <link rel="stylesheet" href="/style/olw/owl.theme.default.min.css">
 
-    <!-- Carousel produtos -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- Script -->
     <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+    <script src="/javascript/olw/jquery.min.js"></script>
+    <script src="/javascript/olw/owl.carousel.min.js"></script>
+    <script src="/javascript/setup.js"></script>
     <title>Ecommerce | Free</title>
 </head>
 
@@ -41,13 +47,13 @@
 
         <!-- INICIO NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <h4><a class="nav-link logo" href="#">BOUTIQUE</a></h4>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
                 aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar-links">
                 <div class="navbar-nav">
+                    <h4><a class="nav-link logo" href="#">BOUTIQUE</a></h4>
                     <a class="nav-link" id="marcador" href="#">
                         Home
                         <div class="container-navhover">
@@ -55,11 +61,11 @@
                                 <ul class="lista-navhover">
                                     <li>
                                         <p>Dudalina</p>
-                                        <img class="img-logo-navhover" src="/img/Dudalina-original.png" alt="">
+                                        <img class="img-logo-navhover" src="img/Dudalina-original.png" alt="">
                                     </li>
                                     <li>
                                         <p>Hugo <br> boss</p>
-                                        <img class="img-logo-navhover" src="/img/Hugoboss (2).png" alt="">
+                                        <img class="img-logo-navhover" src="/img/Hugoboss.png" alt="">
                                     </li>
                                     <li>
                                         <p>Sergio K</p>
@@ -115,8 +121,7 @@
                         </div>
                     </a>
 
-                    <a class="nav-link" href="#">Comprar
-                        <span class="new">NEW</span>
+                    <a class="nav-link  new" href="#">Comprar
                         <div class="container-navhover AlturaListaLinks2">
                             <div class="grupo-navhover">
                                 <ul class="lista-links">
@@ -150,9 +155,8 @@
                         </div>
                     </a>
 
-                    <a class=" nav-link" href="#">Páginas
-                        <span class="hot">HOT</span>
-
+                    <a class="nav-link hot" href="#">
+                        Páginas
                         <div class="container-navhover AlturaListaLinks1">
                             <div class="grupo-navhover">
                                 <ul class="lista-links">
@@ -242,7 +246,7 @@
                             </div>
                         </div>
                     </a>
-                   
+
                     <a class="nav-link" href="#">Blog
                         <div class="container-navhover AlturaLarguraBlog">
                             <div class="grupo-navhover">
@@ -263,23 +267,12 @@
                     </a>
                 </div>
             </div>
-
-            <ul>
-                <li><i class="fas fa-shopping-cart"></i>
-                    <span class="notificacao">
-                        0
-                    </span>
-                </li>
-                <li><i class="fas fa-cog"></i></li>
-            </ul>
-
-
-            <div class="search_box">
-                <input type="text" class="search_txt" placeholder="Buscar ?">
-                <a class="search_btn" href="#"><i class="fa fa-search"></i></a>
-
-            </div>
         </nav><!-- FIM NAVBAR -->
+        <ul class="icon-navlist">
+            <li><i class="fa fa-search"></i></li>
+            <li><i class="fas fa-shopping-cart"></i></li>
+            <li><i class="fas fa-cog"></i></li>
+        </ul>
     </header>
 
     <!-- INICIO CAROUSEL -->
@@ -315,6 +308,7 @@
                 </aside>
             </div>
         </div>
+
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Anterior</span>
@@ -1056,48 +1050,6 @@
         </a>
         <p class="direitos-reservados">® Todos os direitos reservados | Feito por Allan Souza Silva ©</p>
     </article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Só utilizar essas tags, divs em útimo caso 
-        <article></article>
-        <aside></aside>
-        <footer></footer>
-        <main></main>
-        <figure></figure>
-        <section></section>-->
-
-
-    <!-- Script bootstrap -->
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
