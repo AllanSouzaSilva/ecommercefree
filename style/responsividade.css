@@ -5,7 +5,10 @@
 
     body {
         border: 1px solid red;
-        margin: auto;
+    }
+
+    .container-fluid {
+        margin: 10px auto;
     }
 
     .cabecalho-nav {
@@ -24,7 +27,11 @@
         display: none;
     }
 
-    .container-free,.lista-categoria, .lista-logo {
+    .container-free {
+        flex-direction: column;
+    }
+
+    .lista-categoria, .lista-logo {
         position: relative;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
@@ -41,12 +48,20 @@
         background-color: #cc9933;
         border-radius: 10px;
     }
-    .container-destaques-hoje, .container-artigos{
+
+    .container-destaques-hoje, .container-artigos, .section-entregas, footer aside, .bandeiras ul {
         flex-direction: column !important;
     }
 
-    .section-entregas{
+    .destaque-img-descricao, .artigos-incluidos {
+        margin-bottom: 10px;
+    }
+
+    .section-entregas {
         display: flex;
         flex-direction: column !important;
     }
+
+
+
 }

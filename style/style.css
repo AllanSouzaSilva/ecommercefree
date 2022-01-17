@@ -96,18 +96,25 @@ nav>h4>.nav-link {
 
 .nav-link:hover .container-navhover {
     position: absolute;
-    width: 1100px;
-    height: 600px;
     bottom: 0;
     top: 60px;
     left: 0px;
+    width: 1100px;
+    height: 600px;
     background-color: #FFF;
     border-radius: 8px;
     opacity: 1;
+    box-shadow:
+        0.2px 2.5px 2.2px rgba(0, 0, 0, 0.04),
+        0.5px 5.3px 5.3px rgba(0, 0, 0, 0.031),
+        0.8px 8.5px 10px rgba(0, 0, 0, 0.028),
+        1.2px 12.3px 17.9px rgba(0, 0, 0, 0.026),
+        1.6px 16.8px 33.4px rgba(0, 0, 0, 0.023),
+        2px 21px 80px rgba(0, 0, 0, 0.018);
     transition: 0.5s;
+    margin: 0 auto;
     z-index: 999;
     overflow: hidden;
-    margin: 0 auto;
 }
 
 
@@ -273,7 +280,6 @@ nav>h4>.nav-link {
     max-width: 80rem;
     top: 200px;
     overflow: hidden;
-    margin: auto;
     padding: 0;
 }
 
@@ -300,7 +306,6 @@ nav>h4>.nav-link {
 }
 
 /******************************** CONFIGURAÇÕES CONTAINER SESSÃO FREE ***************************/
-
 .container-free {
     display: flex;
     justify-content: space-between;
@@ -875,18 +880,12 @@ footer {
     flex-direction: column;
     background: #F0F0F0;
 }
-
-footer article {
-    width: 1090px;
-    margin: auto;
-}
-
 .section-entregas {
     border: 1px solid #cc9933;
     position: relative;
     bottom: 40px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -894,6 +893,20 @@ footer article {
     color: #888;
     background-color: #fff;
 }
+
+footer aside {
+    border: 2px solid yellow;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+footer article {
+    border: 2px solid red;
+    margin: 0 auto;
+}
+
+
 
 .section-entregas i {
     font-size: 1.5rem;
@@ -903,13 +916,6 @@ footer article {
     font-family: 'Oswald';
 }
 
-footer aside {
-    width: 1090px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: auto;
-}
 
 footer aside section {
     display: flex;
@@ -1022,8 +1028,6 @@ footer aside section h5 {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    width: 1048px;
-    margin: auto;
 }
 
 element.style {
@@ -1052,12 +1056,7 @@ element.style {
 .bandeiras ul li img {
     cursor: pointer;
 }
-
-.bandeiras ul li img:hover {
-    color: black;
-}
-
-.bandeiras .direitos-resera {
+.direitos-reservados {
     margin: auto;
     text-align: center;
 }
