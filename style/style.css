@@ -57,12 +57,66 @@ img {
 
 .icon-navlist {
     display: flex;
-    gap: 12px;
+    gap: 35px;
     justify-content: space-between;
     align-items: center;
     margin: 10px;
     padding: 15px;
     color: #FFF;
+}
+
+.icon-navlist i {
+    font-size: 1.3rem;
+}
+
+.search_box {
+    position: absolute;
+    bottom: 86%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    background: #0d0d0d;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-btn {
+    float: right;
+    width: 40px;
+    height: 40px;
+    background: #0d0d0d;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transform: all 0.8s ease;
+    color: #fff;
+}
+
+.search_txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0;
+    color: white;
+}
+
+.search_box:hover .search_txt {
+    width: 200px;
+    padding: 0 6px;
+}
+
+
+.search_box:hover .search-btn {
+    background: #FFF;
+    color: black;
+}
+
+::placeholder {
+    color: white;
 }
 
 nav>h4>.nav-link {
@@ -268,6 +322,7 @@ nav>h4>.nav-link {
     text-align: center;
     border-radius: 50%;
     padding: 2px 6px;
+    font-size: 16px;
 }
 
 .logo, .navbar, .navbar-nav a, .notificacao {
@@ -280,7 +335,6 @@ nav>h4>.nav-link {
     max-width: 80rem;
     top: 200px;
     overflow: hidden;
-    padding: 0;
 }
 
 /******************************** CONFIGURAÇÕES CONTAINER CARROSEL ***************************/
@@ -310,14 +364,13 @@ nav>h4>.nav-link {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    margin: 20px auto;
 }
 
 .container-free>p {
     border: 1px dashed #c3c3c3;
     display: flex;
     align-items: center;
-    width: 350px;
     padding: 20px;
     margin: 0;
     cursor: pointer;
@@ -692,7 +745,6 @@ figure .descricao-carousel span {
 }
 
 .lista-logo {
-
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -878,8 +930,9 @@ figure.effect-layla:hover figcaption::after {
 footer {
     display: flex;
     flex-direction: column;
-    background: #F0F0F0;
+    background: #dad8d8;
 }
+
 .section-entregas {
     border: 1px solid #cc9933;
     position: relative;
@@ -895,14 +948,13 @@ footer {
 }
 
 footer aside {
-    border: 2px solid yellow;   
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: auto;
 }
+
 footer article {
-    border: 2px solid red;
     margin: 0 auto;
 }
 
@@ -923,12 +975,8 @@ footer aside section {
     justify-content: start;
     text-align: left;
     color: #888;
-    width: 350px;
-}
-
-
-.section-contato p i {
-    padding-right: 10px;
+    width: 340px;
+    margin: 0 10px;
 }
 
 .section-contato p:hover {
@@ -968,7 +1016,7 @@ footer aside section h5 {
     border-image: linear-gradient(227.91deg, #141414 0%, #888 100%)1;
     text-align: center;
     color: #141414;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 50px;
     cursor: pointer;
     letter-spacing: 10px;
@@ -979,15 +1027,19 @@ footer aside section h5 {
     flex-direction: row;
     justify-content: flex-end;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 
-.section-new-redes-sociais .input-newsletter .search-txt {
-    width: 289px;
+.section-new-redes-sociais .input-newsletter .search-text {
+    width: 282px;
     border: 1px solid #c3c3c3;
     background-color: #F0F0F0;
+    
 }
-
+.search-text::placeholder{
+    color: black;
+}
 .section-new-redes-sociais .input-newsletter a .fa-search {
     font-size: 1.5rem;
     color: #fff;
@@ -1000,7 +1052,9 @@ footer aside section h5 {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
+.rede-sociais, .search-text {
+    margin: 0 ;
+}
 .rede-sociais ul li {
     border-radius: 50%;
     padding: 10px;
@@ -1020,7 +1074,10 @@ footer aside section h5 {
 }
 
 .bandeiras {
-    background-color: #0d0d0d;
+    color: rgb(182, 182, 182);
+    font-size: 1.2rem;
+    padding: 15px;
+    background-color: #232323;
 }
 
 .bandeiras ul {
@@ -1056,6 +1113,7 @@ element.style {
 .bandeiras ul li img {
     cursor: pointer;
 }
+
 .direitos-reservados {
     margin: auto;
     text-align: center;

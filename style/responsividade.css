@@ -3,16 +3,12 @@
         overflow-x: hidden;
     }
 
-    body {
-        border: 1px solid red;
-    }
-
     .container-fluid {
-        margin: 10px auto;
+        margin: 5px !important;
+        overflow-x: hidden;
     }
 
     .cabecalho-nav {
-        border: 2px solid blue;
         background: #212121;
         display: flex;
         flex-direction: column;
@@ -31,7 +27,13 @@
         flex-direction: column;
     }
 
-    .lista-categoria, .lista-logo {
+    .lista-logo {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .lista-categoria {
         position: relative;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
@@ -49,19 +51,14 @@
         border-radius: 10px;
     }
 
-    .container-destaques-hoje, .container-artigos, .section-entregas, footer aside, .bandeiras ul {
+    .container-destaques-hoje, .container-artigos, .section-entregas, .sessao-categorias, footer aside, .bandeiras ul {
         flex-direction: column !important;
+        margin: auto;
     }
 
     .destaque-img-descricao, .artigos-incluidos {
         margin-bottom: 10px;
     }
-
-    .section-entregas {
-        display: flex;
-        flex-direction: column !important;
-    }
-
 
 
 }
