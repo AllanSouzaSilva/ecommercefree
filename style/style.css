@@ -421,6 +421,7 @@ nav>h4>.nav-link {
 }
 
 .link-destaques {
+    color: #fff;
     margin-top: 250px;
 }
 
@@ -958,8 +959,6 @@ footer article {
     margin: 0 auto;
 }
 
-
-
 .section-entregas i {
     font-size: 1.5rem;
 }
@@ -984,6 +983,10 @@ footer aside section {
     color: #141414;
     transition: 0.5s;
 
+}
+
+.section-contato a {
+    color: #888 !important;
 }
 
 footer aside section h5 {
@@ -1035,11 +1038,13 @@ footer aside section h5 {
     width: 282px;
     border: 1px solid #c3c3c3;
     background-color: #F0F0F0;
-    
+
 }
-.search-text::placeholder{
+
+.search-text::placeholder {
     color: black;
 }
+
 .section-new-redes-sociais .input-newsletter a .fa-search {
     font-size: 1.5rem;
     color: #fff;
@@ -1047,14 +1052,20 @@ footer aside section h5 {
     padding: 15px;
 }
 
+.rede-sociais, .section-new-redes-sociais h5 {
+    padding: 5px;
+}
+
 .section-new-redes-sociais .rede-sociais .lista-redes-sociais {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .rede-sociais, .search-text {
-    margin: 0 ;
+    margin: 0;
 }
+
 .rede-sociais ul li {
     border-radius: 50%;
     padding: 10px;
