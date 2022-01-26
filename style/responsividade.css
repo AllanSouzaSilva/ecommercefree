@@ -1,187 +1,61 @@
-  @media(max-width: 575px) {
+@media(max-width: 575px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container-fluid {
+        border: 2px solid red;
+        margin: 5px !important;
+        overflow-x: hidden;
+    }
 
 
-
-      body {
-          overflow-x: hidden;
-      }
-
-      .container-fluid {
-          margin: 5px !important;
-          overflow-x: hidden;
-      }
+    .container-navhover {
+        display: none;
+    }
 
 
-      .container-navhover {
-          display: none;
-      }
+    .container-free {
+        flex-direction: column;
+    }
 
-      .nav-link:hover .container-navhover {
-          display: none;
-      }
+    .lista-logo {
+        display: flex;
+        flex-wrap: wrap;
 
-      .container-free {
-          flex-direction: column;
-      }
+    }
 
-      .lista-logo {
-          display: flex;
-          flex-wrap: wrap;
+    .lista-logo .logo-marcas {
+        margin: 20px 0;
+    }
 
-      }
+    .lista-categoria {
+        position: relative;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: ms -ms-autohiding-scrollbar;
+    }
 
-      .lista-logo .logo-marcas {
-          margin: 20px 0;
-      }
+    ::-webkit-scrollbar {
+        background-color: #c3c3c3;
+        border-radius: 10px;
+        border: 1px solid #232323;
+    }
 
-      .lista-categoria {
-          position: relative;
-          overflow-x: auto;
-          -webkit-overflow-scrolling: touch;
-          -ms-overflow-style: ms -ms-autohiding-scrollbar;
-      }
+    ::-webkit-scrollbar-thumb {
+        background-color: #cc9933;
+        border-radius: 10px;
+    }
 
-      ::-webkit-scrollbar {
-          background-color: #c3c3c3;
-          border-radius: 10px;
-          border: 1px solid #232323;
-      }
+    .container-destaques-hoje, .container-artigos, .section-entregas, .sessao-categorias, footer aside, .bandeiras ul {
+        flex-direction: column !important;
+        margin: auto;
+    }
 
-      ::-webkit-scrollbar-thumb {
-          background-color: #cc9933;
-          border-radius: 10px;
-      }
+    .destaque-img-descricao, .artigos-incluidos {
+        margin-bottom: 10px;
+    }
 
-      .container-destaques-hoje, .container-artigos, .section-entregas, .sessao-categorias, footer aside, .bandeiras ul {
-          flex-direction: column !important;
-          margin: auto;
-      }
+}
 
-      .destaque-img-descricao, .artigos-incluidos {
-          margin-bottom: 10px;
-      }
-
-      .nav-list {
-          position: absolute;
-          top: 8vh;
-          right: 0;
-          width: 50vw;
-          height: 92vh;
-          background: #23232e;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-around;
-          transform: translateX(100%);
-          transition: transform 0.3s ease-in;
-      }
-
-      .nav-list li {
-          margin-left: 0;
-          opacity: 0;
-      }
-
-      .mobile-menu {
-          display: block;
-      }
-  }
-
-
-  @media (max-width: 999px) {
-
-      body {
-          overflow-x: hidden;
-      }
-
-      .container-fluid {
-          margin: 5px !important;
-          overflow-x: hidden;
-      }
-
-
-      .container-navhover {
-          display: none;
-      }
-
-      .nav-link:hover .container-navhover {
-          display: none;
-      }
-
-      .container-free {
-          flex-direction: column;
-      }
-
-      .lista-logo {
-          display: flex;
-          flex-wrap: wrap;
-
-      }
-
-      .lista-logo .logo-marcas {
-          margin: 20px 0;
-      }
-
-      .lista-categoria {
-          position: relative;
-          overflow-x: auto;
-          -webkit-overflow-scrolling: touch;
-          -ms-overflow-style: ms -ms-autohiding-scrollbar;
-      }
-
-      ::-webkit-scrollbar {
-          background-color: #c3c3c3;
-          border-radius: 10px;
-          border: 1px solid #232323;
-      }
-
-      ::-webkit-scrollbar-thumb {
-          background-color: #cc9933;
-          border-radius: 10px;
-      }
-
-      .container-destaques-hoje, .container-artigos, .section-entregas, .sessao-categorias, footer aside, .bandeiras ul {
-          flex-direction: column !important;
-          margin: auto;
-      }
-
-      .destaque-img-descricao, .artigos-incluidos {
-          margin-bottom: 10px;
-      }
-
-
-      .nav-list {
-          border: 2px solid red;
-          position: absolute;
-          top: 11vh;
-          right: 0;
-          width: 50vw;
-          height: 92vh;
-          background: #0d0d0d;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-around;
-          transform: translateX(100%);
-          transition: transform 0.3s ease-in;
-      }
-
-      .nav-list li {
-          border: 2px solid blue;
-          margin-left: 0;
-          opacity: 0;
-      }
-
-      .mobile-menu {
-          display: block;
-      }
-
-      /*Botão pesquisa*/
-      .search_box {
-          padding: 5px;
-          left: 270px;
-          margin-bottom: 8px;
-      }
-
-      .search_box:hover .search_txt {
-          border: 2px solid yellow;
-          width: 190px;
-      }
-  }
