@@ -20,17 +20,17 @@ body {
     font-family: 'Montserrat';
 }
 
-li{
+li {
     list-style: none;
 }
-img {
-    vertical-align: middle;
+
+a:hover {
+
+    text-decoration: none;
 }
 
-.links-navegacao {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
+img {
+    vertical-align: middle;
 }
 
 
@@ -49,8 +49,9 @@ nav {
     border: 2px solid red;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background: #23232e;
-    height: 8vh;
+    height: 11vh;
 }
 
 .nav-list {
@@ -59,18 +60,53 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
 }
+
 .nav-list li {
+    border: 2px solid blue;
+    text-align: center;
     letter-spacing: 3px;
     margin-left: 32px;
 }
+
+
+
+.links-navegacao {
+    color: #fff !important;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 20px 30px;
+    position: relative;
+    transition: all 0.5s;
+
+}
+
+.links-navegacao::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 0;
+    background: #cc9933;
+    display: inline-block;
+    transition: all 0.5s;
+    z-index: 1;
+
+}
+
+.links-navegacao:hover::after {
+    width: 100%;
+    transition: all 0.5s;
+}
+
 
 .mobile-menu {
     display: none;
     cursor: pointer;
 }
-.mobile-menu div{
+
+.mobile-menu div {
     width: 32px;
     height: 2px;
     background: #FFF;
@@ -93,6 +129,7 @@ nav {
         transform: translateX(0);
     }
 }
+
 @media (max-width: 999px) {
     body {
         overflow-x: hidden;
@@ -110,6 +147,11 @@ nav {
         justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
+        z-index: 999;
+    }
+
+    nav {
+        height: 8vh;
     }
 
     .nav-list li {
@@ -174,12 +216,32 @@ nav {
     color: #dad8d8;
 }
 
-/******************************** CONFIGURAÇÕES CONTAINER FLUID ***************************/
+.fa-shopping-cart:hover,
+.fa-user-circle:hover {
+    color: #e7c878;
+}
 
 
 /******************************** CONFIGURAÇÕES CONTAINER CARROSEL ***************************/
+header>.carousel {
+    border: 2px solid green;
+    width: 100% !important;
+    height: 100%;
+    object-fit: contain;
+}
 
+.carousel-item{
+    position: relative;
+}
+.carrosel-principal{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-weight: 500;
+    color: #FFF;
+    border: 2px solid blue;
 
+}
 /******************************** CONFIGURAÇÕES CONTAINER SESSÃO FREE ***************************/
 .container-free {
     display: flex;
@@ -941,6 +1003,7 @@ element.style {
     color: #FFF;
     transition: 0.5s;
 }
+
 .scroll_top {
     width: 40px;
     height: 40px;
@@ -954,6 +1017,7 @@ element.style {
     text-align: center;
     line-height: 40px;
 }
+
 .bandeiras ul li img {
     cursor: pointer;
 }

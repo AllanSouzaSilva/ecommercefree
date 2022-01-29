@@ -1,9 +1,5 @@
 @media(max-width: 575px) {
 
-    body {
-        overflow-x: hidden;
-    }
-
     .container-fluid {
         border: 2px solid red;
         margin: 5px !important;
