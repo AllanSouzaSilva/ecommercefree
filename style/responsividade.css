@@ -4,18 +4,21 @@
         margin: 5px !important;
         overflow-x: hidden;
     }
-nav{
-    justify-content: flex-end !important;
-}
-    .carrosel-principal > h2, h1{
-        font-size: 1.5rem !important;
-    
+
+    nav {
+        justify-content: flex-end !important;
     }
-    
+
+    .carrosel-principal>h2, h1 {
+        font-size: 1.5rem !important;
+
+    }
+
     .carrosel-principal span a {
-        
+
         top: 30px !important;
     }
+
     .container-free {
         flex-direction: column;
     }
@@ -28,6 +31,10 @@ nav{
 
     .lista-logo .logo-marcas {
         margin: 20px 0;
+    }
+
+    .container-destaques-hoje, .container-artigos {
+        border: none !important;
     }
 
     .lista-categoria {
@@ -58,4 +65,3 @@ nav{
     }
 
 }
-
