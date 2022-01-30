@@ -41,21 +41,17 @@ img {
     font-weight: 900;
 }
 
-header {
-    border: 2px solid yellow;
-}
+header {}
 
 nav {
-    border: 2px solid red;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #23232e;
-    height: 11vh;
+    background: #212121;
+    height: 10vh;
 }
 
 .nav-list {
-    border: 2px solid green;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -63,19 +59,18 @@ nav {
 }
 
 .nav-list li {
-    border: 2px solid blue;
     text-align: center;
     letter-spacing: 3px;
-    margin-left: 32px;
+    margin-left: 25px;
 }
 
 
 
 .links-navegacao {
-    color: #fff !important;
+    color: #EEE!important;
     text-decoration: none;
     transition: 0.3s;
-    padding: 20px 30px;
+    padding: 10px 10px;
     position: relative;
     transition: all 0.5s;
 
@@ -86,7 +81,7 @@ nav {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 5px;
+    height: 3px;
     width: 0;
     background: #cc9933;
     display: inline-block;
@@ -109,7 +104,7 @@ nav {
 .mobile-menu div {
     width: 32px;
     height: 2px;
-    background: #FFF;
+    background: #EEE;
     margin: 8px;
     transition: 0.3s;
 }
@@ -141,7 +136,7 @@ nav {
         right: 0;
         width: 50vw;
         height: 92vh;
-        background: #23232e;
+        background: #212121;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -178,22 +173,26 @@ nav {
 /** Config notificações **/
 .hot::before {
     content: 'HOT';
-    position: relative;
+    position: absolute;
     background-color: #f34317;
     font-size: 8px;
-    left: 100px;
-    bottom: 13px;
+    right: 0;
+    top: 0;
     padding: 1px 2px 1px 2px;
 }
 
+.hot, .new {
+    position: relative;
+    text-align: left !important;
+}
 
 .new::before {
     content: 'NEW';
-    position: relative;
+    position: absolute;
     background-color: #68a2ec;
     font-size: 8px;
-    left: 120px;
-    bottom: 13px;
+    right: 0;
+    top: 0;
     padding: 1px 4px;
 }
 
@@ -205,15 +204,15 @@ nav {
     border-radius: 50%;
     padding: 3px 5px;
     font-size: 16px;
-    color: #FFF;
+    color: #EEE;
 }
 
 
 .fa-shopping-cart,
 .fa-user-circle {
-    font-size: 1.7em;
+    font-size: 1.4em;
     margin-left: 15px;
-    color: #dad8d8;
+    color: #EEE;
 }
 
 .fa-shopping-cart:hover,
@@ -224,24 +223,54 @@ nav {
 
 /******************************** CONFIGURAÇÕES CONTAINER CARROSEL ***************************/
 header>.carousel {
-    border: 2px solid green;
-    width: 100% !important;
+    width: 100%;
     height: 100%;
     object-fit: contain;
-}
+   }
 
-.carousel-item{
+.carousel-item {
     position: relative;
 }
-.carrosel-principal{
+
+.carrosel-principal {
     position: absolute;
-    top: 50%;
-    left: 0;
-    font-weight: 500;
+    top: 20%;
+    left: 20%;
+    text-align: center;
     color: #FFF;
-    border: 2px solid blue;
+    line-height: 5px;
 
 }
+
+.carrosel-principal h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 6em;
+    color: #cc9933;
+}
+
+.carrosel-principal h1 {
+    font-weight: 900;
+}
+
+.carrosel-principal p {
+    font-family: 'Oswald';
+}
+
+.carrosel-principal span a {
+    position: relative;
+    top: 70px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: dotted;
+    color: #cc9933;
+    text-decoration: underline;
+}
+
+.carrosel-principal span a:hover {
+    text-decoration: underline;
+    color: #FFF;
+}
+
 /******************************** CONFIGURAÇÕES CONTAINER SESSÃO FREE ***************************/
 .container-free {
     display: flex;

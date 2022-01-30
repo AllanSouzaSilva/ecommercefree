@@ -1,17 +1,21 @@
 @media(max-width: 575px) {
 
     .container-fluid {
-        border: 2px solid red;
         margin: 5px !important;
         overflow-x: hidden;
     }
-
-
-    .container-navhover {
-        display: none;
+nav{
+    justify-content: flex-end !important;
+}
+    .carrosel-principal > h2, h1{
+        font-size: 1.5rem !important;
+    
     }
-
-
+    
+    .carrosel-principal span a {
+        
+        top: 30px !important;
+    }
     .container-free {
         flex-direction: column;
     }
