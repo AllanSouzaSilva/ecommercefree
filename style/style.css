@@ -48,7 +48,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     background: #212121;
-    height: 10vh;
+    height: 12vh;
 }
 
 .nav-list {
@@ -56,7 +56,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin:auto;
 }
 
 .nav-list li {
@@ -137,6 +137,7 @@ nav {
         right: 0;
         width: 50vw;
         height: 92vh;
+        margin-top: 0;
         background: #212121;
         flex-direction: column;
         align-items: center;
@@ -850,7 +851,6 @@ figure.effect-layla:hover figcaption::after {
 }
 
 .container-principla-login {
-    border: 2px solid red;
     background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/the-barded-man-in-a-suit-at-black.jpg'), no-repeat center center;
     background-size: cover;
     display: flex;
@@ -859,24 +859,32 @@ figure.effect-layla:hover figcaption::after {
     width: 100%;
     height: 100%;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .container-vidroForm {
-    border: 2px solid purple;
-    margin: auto;
+    border-radius: 15px;
+    margin:auto;
+    padding: 20px 10px;
+    background-color: rgba(51, 51, 51, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 3px 2px 5px rgba(17, 17, 17, 0.55);
 }
-.container-principla-login a{
+
+.container-principla-login a {
     color: #cccccc;
+    text-decoration: none;
 }
+
 .ilustracao-login {
-    border: 2px solid green;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
-.container-form{
-    border: 2px solid yellow;
+
+.container-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -884,24 +892,27 @@ figure.effect-layla:hover figcaption::after {
     margin: 15px;
     color: #cccccc;
 }
-.container-form h1{
+
+.container-form h1 {
     letter-spacing: 1px;
     font-weight: 0;
 
 }
-.btn-email{
+
+.btn-inputs {
     width: 300px;
-    background:transparent;
+    background: transparent;
     border-bottom: 3px solid #ecb33f;
     margin: 10px;
-font-weight: bold;
+    font-weight: bold;
 
 }
 
-::placeholder{
+::placeholder {
     color: #cccccc;
 }
-.container-form h4{
+
+.container-form h4 {
     font-weight: 500;
     font-family: 'Playfair Display', serif;
     margin-bottom: 20px;
@@ -915,13 +926,36 @@ font-weight: bold;
 }
 
 .container-btn {
-    border: 2px solid white;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     padding: 10px;
 }
+
+.btn-entrar-cadastrar {
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+}
+.btn-entrar-cadastrar::before, .btn-entrar-cadastrar::after {
+    position: absolute;
+    content: '';
+    z-index: -1;
+}
+
+.linkForm:hover {
+    padding: 5px 20px;
+    background: #ecb33f;
+    box-shadow: 0 0 5px #ecb33f, 0 0 25px #ecb33f, 0 0 50px #ecb33f, 0 0 200px #ecb33f;
+    border-radius: 10px;
+    font-weight: 900;
+    color: #141414;
+}
+
+.container-vidroForm span {
+}
+
 /******************************* CONFIGURAÇÕES CONTAINER RODAPÉ  ***************************/
 
 footer {
