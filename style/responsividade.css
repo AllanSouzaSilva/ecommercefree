@@ -1,4 +1,8 @@
 @media(max-width: 575px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
 
     .container-fluid {
         margin: 5px !important;
@@ -63,5 +67,176 @@
     .destaque-img-descricao, .artigos-incluidos {
         margin-bottom: 10px;
     }
+
+    .container-principla-login {
+        width: 100% !important;
+        height: 55% !important;
+        background-size: contain !important;
+        background-position: center center !important;
+    }
+
+}
+
+@media (min-width: 574px) and (max-width: 767.98px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .container-fluid {
+        margin: 5px !important;
+    }
+
+    nav {
+        justify-content: flex-end !important;
+    }
+
+    .carrosel-principal>h2, h1 {
+        font-size: 1.5rem !important;
+
+    }
+
+    .carrosel-principal span a {
+
+        top: 30px !important;
+    }
+
+    .container-free {
+        flex-direction: column;
+    }
+
+    .lista-logo {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .lista-logo .logo-marcas {
+        margin: 20px 0;
+    }
+
+    .container-destaques-hoje, .container-artigos {
+        border: none !important;
+    }
+
+    .lista-categoria {
+        position: relative;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: ms -ms-autohiding-scrollbar;
+    }
+
+    ::-webkit-scrollbar {
+        background-color: #c3c3c3;
+        border-radius: 10px;
+        border: 1px solid #232323;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #cc9933;
+        border-radius: 10px;
+    }
+
+    .container-destaques-hoje, .container-artigos, .section-entregas, .sessao-categorias, footer aside, .bandeiras ul {
+        flex-direction: column !important;
+        margin: auto;
+    }
+
+    .destaque-img-descricao, .artigos-incluidos {
+        margin-bottom: 10px;
+    }
+    .main-page-login{
+        width: 100%;
+        height: 100%;
+    }
+    .container-principla-login {
+        width: 100% !important;
+        height: 55% !important;
+        background-size: contain !important;
+        background-position: center center !important;
+    }
+
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        background-color: #141414;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container-fluid {
+        margin: 5px !important;
+        overflow-x: hidden;
+    }
+
+    nav {
+        justify-content: flex-end !important;
+    }
+
+    .carrosel-principal>h2, h1 {
+        font-size: 1.5rem !important;
+
+    }
+
+    .carrosel-principal span a {
+
+        top: 30px !important;
+    }
+
+    .container-free {
+        flex-direction: column;
+    }
+
+    .lista-logo {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .lista-logo .logo-marcas {
+        margin: 20px 0;
+    }
+
+    .container-destaques-hoje, .container-artigos {
+        border: none !important;
+    }
+
+    .lista-categoria {
+        position: relative;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: ms -ms-autohiding-scrollbar;
+    }
+
+    ::-webkit-scrollbar {
+        background-color: #c3c3c3;
+        border-radius: 10px;
+        border: 1px solid #232323;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #cc9933;
+        border-radius: 10px;
+    }
+
+    .container-destaques-hoje, .container-artigos, .section-entregas, .sessao-categorias, footer aside, .bandeiras ul {
+        flex-direction: column !important;
+        margin: auto;
+    }
+
+    .destaque-img-descricao, .artigos-incluidos {
+        margin-bottom: 10px;
+    }
+    .container-principla-login {
+        width: 100% !important;
+        height: 55% !important;
+        background-size: contain !important;
+        background-position: center center !important;
+    }
+
 
 }

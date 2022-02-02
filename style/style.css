@@ -133,10 +133,10 @@ nav {
 
     .nav-list {
         position: absolute;
-        top: 8vh;
+        top: 5vh;
         right: 0;
         width: 50vw;
-        height: 92vh;
+        height: 98vh;
         margin-top: 0;
         background: #212121;
         flex-direction: column;
@@ -148,7 +148,7 @@ nav {
     }
 
     nav {
-        height: 8vh;
+        height: 5vh;
     }
 
     .nav-list li {
@@ -844,7 +844,7 @@ figure.effect-layla:hover figcaption::after {
 .main-page-login {
     background-color: #141414;
     width: 100%;
-    height: 92vh;
+    height: 110vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -905,6 +905,7 @@ figure.effect-layla:hover figcaption::after {
     border-bottom: 3px solid #ecb33f;
     margin: 10px;
     font-weight: bold;
+    color: #FFF;
 
 }
 
@@ -920,9 +921,9 @@ figure.effect-layla:hover figcaption::after {
 }
 
 .img-ilustracao-login {
-    width: 20%;
-    height: 20%;
-    object-fit: cover;
+    width: 35%;
+    height: 35%;
+    object-fit: contain;
 }
 
 .container-btn {
