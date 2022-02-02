@@ -5,16 +5,14 @@
 O projeto foi criado e desenvolvido com o objetivo de agregar no protifólio.
 Além do que foi citado, também teve o fato de buscar outros conhecimentos, ferramentas e recursos.
 O projeto em si, foi clonado de um site de templates, porém o mesmo não está indentico, eu alterei algumas funcionalidades, fotos, fontes e etc ...
-<h2 align="center">
-  <p>Web Marketing home page</p>
-  <img width="70%" alt="Sitehome" title="Home page" src="https://github.com/AllanSouzaSilva/DayanaMK/blob/main/img/video-desktop.gif" style="max-width:70%;">
-</h2>
 
 <h2 align="center">
-  <p>Web Marketing home page - Mobile</p>
-  <img width="30%" heigth="30%" alt="Sitehome" title="Home page" src="https://github.com/AllanSouzaSilva/DayanaMK/blob/main/img/VideoMobile.gif" style="max-width:40%;">
+  <p>Web Marketing home page - Desktop & Mobile</p>
+  <img width="30%" heigth="30%" alt="Sitehome" title="Home page" src="https://github.com/AllanSouzaSilva/ecommercefree/blob/main/img/20220202_183449000_iOS.gif" style="max-width:40%;">
 </h2>
-## Estrutura
+
+ ## Arvore do projeto
+
 
 ```bash
 ecommerce
